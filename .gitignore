@@ -1,0 +1,11 @@
+*.iml
+.idea/
+*.txt
+*.jar
+*.log
+*.zip
+src/main/resources/
+src/test/
+target
+.DS_Store
+
