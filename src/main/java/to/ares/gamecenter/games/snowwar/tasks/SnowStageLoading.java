@@ -25,6 +25,6 @@ public class SnowStageLoading {
 			}
 		}
 
-		room.STATUS = SnowWar.STAGE_STARTING;
+		room.status = SnowWar.STAGE_STARTING;
 	}
 }

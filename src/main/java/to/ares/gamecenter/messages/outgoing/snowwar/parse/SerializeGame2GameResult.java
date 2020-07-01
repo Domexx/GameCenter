@@ -9,7 +9,7 @@ import com.eu.habbo.messages.ServerMessage;
 public class SerializeGame2GameResult {
     public static void parse(final ServerMessage msg, final SnowWarRoom arena) {
         msg.appendBoolean(true);
-        msg.appendInt(arena.Result);
-        msg.appendInt(arena.Winner);
+        msg.appendInt(arena.result);
+        msg.appendInt(arena.winner);
     }
 }

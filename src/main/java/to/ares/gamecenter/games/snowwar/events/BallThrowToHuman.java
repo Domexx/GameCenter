@@ -12,7 +12,7 @@ public class BallThrowToHuman extends Event {
 	public int type;
 
 	public BallThrowToHuman(final HumanGameObject attacker, final HumanGameObject victim, final int type) {
-		EventType = BALLTHROWHUMAN;
+		eventType = BALLTHROWHUMAN;
 		this.attacker = attacker;
 		this.victim = victim;
 		this.type = type;

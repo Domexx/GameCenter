@@ -13,38 +13,38 @@ public class SnowArenaEnd {
 
         for (final int TeamId : SnowWar.TEAMS) {
             if (TeamId == SnowWar.TEAM_BLUE) {
-                blueScore += room.TeamScore[TeamId - 1];
+                blueScore += room.teamScore[TeamId - 1];
             } else {
-                redScore += room.TeamScore[TeamId - 1];
+                redScore += room.teamScore[TeamId - 1];
             }
         }
 
         if (blueScore > redScore) {
-            room.Winner = 1;
-            room.Result = 1;
+            room.winner = 1;
+            room.result = 1;
         } else if (redScore > blueScore) {
-            room.Winner = 2;
-            room.Result = 1;
+            room.winner = 2;
+            room.result = 1;
         } else {
-            room.Winner = 0;
-            room.Result = 2;
+            room.winner = 0;
+            room.result = 2;
         }
 
         for (final HumanGameObject player : room.players.values()) {
-            if (room.MostHits == null) {
-                room.MostHits = player;
+            if (room.mostHits == null) {
+                room.mostHits = player;
             }
 
-            if (room.MostKills == null) {
-                room.MostKills = player;
+            if (room.mostKills == null) {
+                room.mostKills = player;
             }
 
-            if (player.hits > room.MostHits.hits) {
-                room.MostHits = player;
+            if (player.hits > room.mostHits.hits) {
+                room.mostHits = player;
             }
 
-            if (player.kills > room.MostKills.kills) {
-                room.MostKills = player;
+            if (player.kills > room.mostKills.kills) {
+                room.mostKills = player;
             }
         }
         room.broadcast(new GameEndingComposer(room));

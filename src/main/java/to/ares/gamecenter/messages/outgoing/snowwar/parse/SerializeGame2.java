@@ -12,12 +12,12 @@ import com.eu.habbo.messages.ServerMessage;
 public class SerializeGame2 {
     public static void parse(final ServerMessage msg, final RoomQueue queue) {
         msg.appendInt(queue.room.roomId);
-        msg.appendString(queue.room.Name);
+        msg.appendString(queue.room.name);
         msg.appendInt(0); // notused
-        msg.appendInt(queue.room.ArenaType.arenaType);
+        msg.appendInt(queue.room.arenaType.arenaType);
         msg.appendInt(SnowWar.TEAMS.length);
         msg.appendInt(SnowWar.MAXPLAYERS);
-        msg.appendString(queue.room.Owner);
+        msg.appendString(queue.room.owner);
         msg.appendInt(14); // notused
         msg.appendInt(queue.players.size());
         for (final GameClient cn : queue.players.values()) {

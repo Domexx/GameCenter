@@ -7,21 +7,20 @@ import to.ares.gamecenter.games.snowwar.SnowWarRoom;
 import com.eu.habbo.messages.ServerMessage;
 import to.ares.gamecenter.games.snowwar.events.*;
 
-public class SerializeGameStatus
-{
+public class SerializeGameStatus {
     public static void parse(final ServerMessage msg, final SnowWarRoom arena, boolean isFull) {
-        msg.appendInt(arena.Turn);
-        msg.appendInt(seed(arena.Turn) + arena.checksum);
+        msg.appendInt(arena.turn);
+        msg.appendInt(seed(arena.turn) + arena.checksum);
 
         msg.appendInt(1);
         {
             msg.appendInt(arena.gameEvents.size());
             for (Event evt : arena.gameEvents) {
-                msg.appendInt(evt.EventType); // Event Type
+                msg.appendInt(evt.eventType); // Event Type
 
-                Emulator.getLogging().logDebugLine(evt.EventType);
+                Emulator.getLogging().logDebugLine(evt.eventType);
 
-                switch (evt.EventType) {
+                switch (evt.eventType) {
                     case Event.PLAYERLEFT:
                         SerializeGame2EventPlayerLeft.parse(msg, (PlayerLeft) evt);
                         break;
@@ -59,16 +58,16 @@ public class SerializeGameStatus
     public static void parseNew(final MessageWriter ClientMessage, final SnowWarRoom arena, boolean isFull) {
         int i = 0;
 
-        Composer.add(arena.Turn, ClientMessage);
-        Composer.add(seed(arena.Turn) + arena.checksum, ClientMessage);
+        Composer.add(arena.turn, ClientMessage);
+        Composer.add(seed(arena.turn) + arena.checksum, ClientMessage);
 
         Composer.add(1, ClientMessage);
         {
             Composer.add(ClientMessage.setSaved(0), ClientMessage);
             for(final Event evt : arena.gameEvents) {
-                Composer.add(evt.EventType, ClientMessage); // Event Type
+                Composer.add(evt.eventType, ClientMessage); // Event Type
 
-                switch (evt.EventType) {
+                switch (evt.eventType) {
                     case Event.PLAYERLEFT:
                         SerializeGame2EventPlayerLeft.parse(ClientMessage, (PlayerLeft) evt);
                         break;

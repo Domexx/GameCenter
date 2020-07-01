@@ -8,7 +8,7 @@ public class UserMove extends Event {
 	public int y;
 
 	public UserMove(final HumanGameObject player, final int x, final int y) {
-		EventType = MOVE;
+		eventType = MOVE;
 		this.player = player;
 		this.x = x;
 		this.y = y;

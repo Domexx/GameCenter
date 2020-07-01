@@ -25,7 +25,7 @@ public class EnterArenaComposer  extends MessageComposer {
 	{
 		this.response.init(5021);
 		this.response.appendInt(0);
-		this.response.appendInt(arena.ArenaType.arenaType);
+		this.response.appendInt(arena.arenaType.arenaType);
 		this.response.appendInt(SnowWar.TEAMS.length);
 		this.response.appendInt(arena.players.size());
 		for (final HumanGameObject Player : arena.players.values()) {

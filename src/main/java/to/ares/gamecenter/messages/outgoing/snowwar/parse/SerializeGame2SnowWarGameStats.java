@@ -8,7 +8,7 @@ import com.eu.habbo.messages.ServerMessage;
  */
 public class SerializeGame2SnowWarGameStats {
     public static void parse(final ServerMessage msg, final SnowWarRoom arena) {
-       msg.appendInt(arena.MostKills.userId);
-       msg.appendInt(arena.MostHits.userId);
+       msg.appendInt(arena.mostKills.userId);
+       msg.appendInt(arena.mostHits.userId);
     }
 }

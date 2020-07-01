@@ -1,7 +1,6 @@
 package to.ares.gamecenter.games.snowwar.arenas;
 
 import com.eu.habbo.Emulator;
-import to.ares.gamecenter.games.snowwar.Arena;
 import to.ares.gamecenter.games.snowwar.GameFuseObject;
 import to.ares.gamecenter.games.snowwar.SnowWarRoom;
 import to.ares.gamecenter.games.snowwar.items.BaseItem;
@@ -528,8 +527,8 @@ public class DragonCave extends Arena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		spawnsBLUE.add(new SpawnPoint(10,10));
-		spawnsRED.add(new SpawnPoint(11,11));
+		spawnsBlue.add(new SpawnPoint(10,10));
+		spawnsRed.add(new SpawnPoint(11,11));
 	}
 
 	@Override

@@ -78,11 +78,11 @@ public class HumanGameObject extends GameItemObject {
 
         SpawnPoint spawn;
         if (teamId == 1) {
-            final int i = RandomInteger.getRandomNumber(0, currentSnowWar.ArenaType.spawnsBLUE.size() - 1);
-            spawn = currentSnowWar.ArenaType.spawnsBLUE.get(i);
+            final int i = RandomInteger.getRandomNumber(0, currentSnowWar.arenaType.spawnsBlue.size() - 1);
+            spawn = currentSnowWar.arenaType.spawnsBlue.get(i);
         } else {
-            final int i = RandomInteger.getRandomNumber(0, currentSnowWar.ArenaType.spawnsRED.size() - 1);
-            spawn = currentSnowWar.ArenaType.spawnsRED.get(i);
+            final int i = RandomInteger.getRandomNumber(0, currentSnowWar.arenaType.spawnsRed.size() - 1);
+            spawn = currentSnowWar.arenaType.spawnsRed.get(i);
         }
 
         currentTile = currentSnowWar.map.getTile(spawn.x, spawn.y);
@@ -534,7 +534,7 @@ public class HumanGameObject extends GameItemObject {
 
     public void giveScore(int _arg2) {
         setScore(score + _arg2);
-        currentSnowWar.TeamScore[team - 1] += _arg2;
+        currentSnowWar.teamScore[team - 1] += _arg2;
     }
 
     public void doKill(int _arg1) {

@@ -13,7 +13,7 @@ public class BallThrowToPosition extends Event {
 	public int type;
 
 	public BallThrowToPosition(final HumanGameObject attacker, final int x, final int y, final int type) {
-		EventType = BALLTHROWPOSITION;
+		eventType = BALLTHROWPOSITION;
 		this.attacker = attacker;
 		this.x = x;
 		this.y = y;

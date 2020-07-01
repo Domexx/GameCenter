@@ -1,4 +1,5 @@
 package to.ares.gamecenter.games.snowwar.events;
+
 /*
  * ****************
  * @author capos *
@@ -15,6 +16,6 @@ public abstract class Event {
 	public final static int PICKBALLFROMGAMEITEM = 12;
 
 
-	public int EventType;
+	public int eventType;
 	public abstract void apply();
 }

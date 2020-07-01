@@ -1,7 +1,6 @@
 package to.ares.gamecenter.games.snowwar.arenas;
 
 import com.eu.habbo.Emulator;
-import to.ares.gamecenter.games.snowwar.Arena;
 import to.ares.gamecenter.games.snowwar.GameFuseObject;
 import to.ares.gamecenter.games.snowwar.SnowWarRoom;
 import to.ares.gamecenter.games.snowwar.items.BaseItem;
@@ -1311,17 +1310,17 @@ public class ArcticIsland extends Arena {
 		fuseObjects.add(item);
 
 
-		spawnsBLUE.add(new SpawnPoint(22,9));
-		spawnsBLUE.add(new SpawnPoint(25,12));
-		spawnsBLUE.add(new SpawnPoint(26,8));
-		spawnsBLUE.add(new SpawnPoint(31,14));
-		spawnsBLUE.add(new SpawnPoint(23,13));
+		spawnsBlue.add(new SpawnPoint(22,9));
+		spawnsBlue.add(new SpawnPoint(25,12));
+		spawnsBlue.add(new SpawnPoint(26,8));
+		spawnsBlue.add(new SpawnPoint(31,14));
+		spawnsBlue.add(new SpawnPoint(23,13));
 
-		spawnsRED.add(new SpawnPoint(30,43));
-		spawnsRED.add(new SpawnPoint(33,42));
-		spawnsRED.add(new SpawnPoint(38,41));
-		spawnsRED.add(new SpawnPoint(26,42));
-		spawnsRED.add(new SpawnPoint(33,46));
+		spawnsRed.add(new SpawnPoint(30,43));
+		spawnsRed.add(new SpawnPoint(33,42));
+		spawnsRed.add(new SpawnPoint(38,41));
+		spawnsRed.add(new SpawnPoint(26,42));
+		spawnsRed.add(new SpawnPoint(33,46));
 	}
 
 	@Override
