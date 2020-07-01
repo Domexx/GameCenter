@@ -17,22 +17,22 @@ public class BaseItem {
     public static final BaseItem snst_iceblock = new BaseItem("s",4064,"snst_iceblock",1,1);
     public static final BaseItem ads_igorraygun = new BaseItem("s",2648,"ads_igorraygun",1,2);
 
-    private int SpriteId;
-    public String Name;
-    private String Type;
+    private int spriteId;
+    public String name;
+    private String type;
     public int xDim;
     public int yDim;
-    public float Height;
+    public float height;
     public boolean allowWalk;
 
     public int itemExtraType = StringStuffData.TYPE_ID;
 
     private BaseItem(final String type, final int id, final String name, final int xdim, final int ydim) {
-        Type = type;
-        SpriteId = id;
-        Name = name;
-        xDim = xdim;
-        yDim = ydim;
-        Height = 1.0f;
+        this.type = type;
+        this.spriteId = id;
+        this.name = name;
+        this.xDim = xdim;
+        this.yDim = ydim;
+        this.height = 1.0f;
     }
 }

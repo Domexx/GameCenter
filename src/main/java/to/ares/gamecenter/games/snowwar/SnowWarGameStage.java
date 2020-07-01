@@ -91,7 +91,7 @@ public class SnowWarGameStage {
         while (local5 < local3) {
             local1 = getTile((object.X + local5), object.Y);
             if (local1 != null){
-                local1._4AO((int)(object.baseItem.Height * Tile.TILE_SIZE));
+                local1._4AO((int)(object.baseItem.height * Tile.TILE_SIZE));
                 if (!object.baseItem.allowWalk){
                     local1.setBlocked(true);
                 };
@@ -102,7 +102,7 @@ public class SnowWarGameStage {
         while (local5 < local4) {
             local1 = getTile(object.X, (object.Y + local5));
             if (local1 != null){
-                local1._4AO((int)(object.baseItem.Height * Tile.TILE_SIZE));
+                local1._4AO((int)(object.baseItem.height * Tile.TILE_SIZE));
                 if (!object.baseItem.allowWalk){
                     local1.setBlocked(true);
                 };
@@ -118,13 +118,13 @@ public class SnowWarGameStage {
         Tile local8;
         Tile local9;
         Tile local10;
-        final int[][] local1 = parseHeightMap(_arg1.HeightMap, _arg1.ArenaWidth, _arg1.ArenaHeight);
-        final int local2 = _arg1.ArenaHeight;
-        final int local3 = _arg1.ArenaWidth;
-        tileMap = new Tile[_arg1.ArenaHeight][];
+        final int[][] local1 = parseHeightMap(_arg1.heightMap, _arg1.arenaWidth, _arg1.arenaHeight);
+        final int local2 = _arg1.arenaHeight;
+        final int local3 = _arg1.arenaWidth;
+        tileMap = new Tile[_arg1.arenaHeight][];
         int local5 = 0;
         while (local5 < local2) {
-            tileMap[local5] = new Tile[_arg1.ArenaWidth];
+            tileMap[local5] = new Tile[_arg1.arenaWidth];
             local6 = 0;
             while (local6 < local3) {
                 tileMap[local5][local6] = null;

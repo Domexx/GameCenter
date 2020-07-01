@@ -15,12 +15,12 @@ import java.util.Map;
 
 public class ArcticIsland extends Arena {
 	public ArcticIsland() {
-		GameFuseObject Item;
+		GameFuseObject item;
 
-		ArenaType = 8;
-		ArenaHeight = 50;
-		ArenaWidth = 50;
-		HeightMap = "" +
+		arenaType = 8;
+		arenaHeight = 50;
+		arenaWidth = 50;
+		heightMap = "" +
 				"xxxxxxxxxxxxxxxxxxx00000xxxxxxxxxxxxxxxxxxxxxxxxxx\r" +
 				"xxxxxxxxxxxxxxxxxx0000000xxxxxxxxxxxxxxxxxxxxxxxxx\r" +
 				"xxxxxxxxxxxxxxxxx000000000xxxxxxxxxxxxxxxxxxxxxxxx\r" +
@@ -72,1243 +72,1243 @@ public class ArcticIsland extends Arena {
 				"xxxxxxxxxxxxxxxxxxxxxxxxxx0000000xxxxxxxxxxxxxxxxx\r" +
 				"xxxxxxxxxxxxxxxxxxxxxxxxxxx00000xxxxxxxxxxxxxxxxxx\r";
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 0;
-		Item.X = 41;
-		Item.Y = 37;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 1;
-		Item.X = 2;
-		Item.Y = 20;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 2;
-		Item.X = 10;
-		Item.Y = 18;
-		Item.Rot = 6;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_tree1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 3;
-		Item.X = 19;
-		Item.Y = 41;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 4;
-		Item.X = 41;
-		Item.Y = 20;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_tree1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 5;
-		Item.X = 9;
-		Item.Y = 31;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 6;
-		Item.X = 23;
-		Item.Y = 44;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 7;
-		Item.X = 4;
-		Item.Y = 18;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 8;
-		Item.X = 2;
-		Item.Y = 20;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_tree1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 9;
-		Item.X = 25;
-		Item.Y = 38;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 10;
-		Item.X = 2;
-		Item.Y = 19;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 11;
-		Item.X = 9;
-		Item.Y = 18;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 12;
-		Item.X = 7;
-		Item.Y = 18;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 2
-		Item.baseItem = BaseItem.snst_fence;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 13;
-		Item.X = 17;
-		Item.Y = 14;
-		Item.Rot = 2;
-		Item.Z = 0;
-		Item.extraData.setExtraData("2");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 14;
-		Item.X = 2;
-		Item.Y = 18;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_tree1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 15;
-		Item.X = 49;
-		Item.Y = 28;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 16;
-		Item.X = 2;
-		Item.Y = 22;
-		Item.Rot = 6;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 17;
-		Item.X = 5;
-		Item.Y = 18;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 18;
-		Item.X = 4;
-		Item.Y = 18;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 19;
-		Item.X = 39;
-		Item.Y = 22;
-		Item.Rot = 2;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 20;
-		Item.X = 39;
-		Item.Y = 23;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 2
-		Item.baseItem = BaseItem.snst_fence;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 21;
-		Item.X = 24;
-		Item.Y = 44;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_tree1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 22;
-		Item.X = 36;
-		Item.Y = 15;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 23;
-		Item.X = 23;
-		Item.Y = 44;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_tree1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 24;
-		Item.X = 47;
-		Item.Y = 32;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 25;
-		Item.X = 39;
-		Item.Y = 37;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 26;
-		Item.X = 8;
-		Item.Y = 18;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 27;
-		Item.X = 2;
-		Item.Y = 19;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_tree1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 28;
-		Item.X = 6;
-		Item.Y = 20;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 29;
-		Item.X = 2;
-		Item.Y = 18;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 2
-		Item.baseItem = BaseItem.snst_fence;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 30;
-		Item.X = 15;
-		Item.Y = 14;
-		Item.Rot = 2;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_tree1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 31;
-		Item.X = 26;
-		Item.Y = 6;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 32;
-		Item.X = 39;
-		Item.Y = 23;
-		Item.Rot = 4;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 33;
-		Item.X = 23;
-		Item.Y = 38;
-		Item.Rot = 2;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_tree1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 34;
-		Item.X = 10;
-		Item.Y = 26;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 35;
-		Item.X = 23;
-		Item.Y = 45;
-		Item.Rot = 4;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 36;
-		Item.X = 39;
-		Item.Y = 21;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 37;
-		Item.X = 5;
-		Item.Y = 18;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 38;
-		Item.X = 39;
-		Item.Y = 24;
-		Item.Rot = 6;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_tree1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 39;
-		Item.X = 13;
-		Item.Y = 15;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 40;
-		Item.X = 3;
-		Item.Y = 18;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 2
-		Item.baseItem = BaseItem.snst_fence;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 41;
-		Item.X = 13;
-		Item.Y = 14;
-		Item.Rot = 2;
-		Item.Z = 0;
-		Item.extraData.setExtraData("1");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_tree1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 42;
-		Item.X = 30;
-		Item.Y = 7;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 43;
-		Item.X = 40;
-		Item.Y = 20;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 2
-		Item.baseItem = BaseItem.snst_fence;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 44;
-		Item.X = 29;
-		Item.Y = 7;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("1");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 2
-		Item.baseItem = BaseItem.snst_fence;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 45;
-		Item.X = 21;
-		Item.Y = 14;
-		Item.Rot = 2;
-		Item.Z = 0;
-		Item.extraData.setExtraData("2");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 2
-		Item.baseItem = BaseItem.snst_fence;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 46;
-		Item.X = 24;
-		Item.Y = 40;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 47;
-		Item.X = 23;
-		Item.Y = 40;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_tree1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 48;
-		Item.X = 15;
-		Item.Y = 10;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 49;
-		Item.X = 37;
-		Item.Y = 37;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_tree1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 50;
-		Item.X = 20;
-		Item.Y = 4;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 51;
-		Item.X = 3;
-		Item.Y = 18;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 52;
-		Item.X = 23;
-		Item.Y = 40;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 53;
-		Item.X = 2;
-		Item.Y = 22;
-		Item.Rot = 2;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 54;
-		Item.X = 43;
-		Item.Y = 20;
-		Item.Rot = 6;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 55;
-		Item.X = 23;
-		Item.Y = 39;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_tree1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 56;
-		Item.X = 45;
-		Item.Y = 25;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 57;
-		Item.X = 23;
-		Item.Y = 42;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 58;
-		Item.X = 42;
-		Item.Y = 20;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 59;
-		Item.X = 9;
-		Item.Y = 18;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 60;
-		Item.X = 10;
-		Item.Y = 18;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 2
-		Item.baseItem = BaseItem.snst_fence;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 61;
-		Item.X = 24;
-		Item.Y = 38;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("1");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 62;
-		Item.X = 11;
-		Item.Y = 18;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 63;
-		Item.X = 39;
-		Item.Y = 37;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 64;
-		Item.X = 8;
-		Item.Y = 18;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 65;
-		Item.X = 39;
-		Item.Y = 20;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 66;
-		Item.X = 38;
-		Item.Y = 37;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 67;
-		Item.X = 40;
-		Item.Y = 37;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 68;
-		Item.X = 2;
-		Item.Y = 21;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 2
-		Item.baseItem = BaseItem.snst_fence;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 69;
-		Item.X = 24;
-		Item.Y = 42;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("2");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 70;
-		Item.X = 39;
-		Item.Y = 22;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 71;
-		Item.X = 38;
-		Item.Y = 37;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 72;
-		Item.X = 40;
-		Item.Y = 20;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_tree1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 73;
-		Item.X = 28;
-		Item.Y = 47;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 74;
-		Item.X = 6;
-		Item.Y = 18;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.s_snowball_machine;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 75;
-		Item.X = 26;
-		Item.Y = 24;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_tree1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 76;
-		Item.X = 5;
-		Item.Y = 24;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 77;
-		Item.X = 41;
-		Item.Y = 20;
-		Item.Rot = 4;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 2
-		Item.baseItem = BaseItem.snst_fence;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 78;
-		Item.X = 19;
-		Item.Y = 14;
-		Item.Rot = 2;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.ads_background;
-		Item.baseItem.allowWalk = true;
-		Item.baseItem.Height = 0.0f;
-		Item.baseItem.itemExtraType = MapStuffData.TYPE_ID;
-		Item.itemId = 79;
-		Item.X = 0;
-		Item.Y = 19;
-		Item.Rot = 1;
-		Item.Z = 0;
-		Item.extraData = new MapStuffData("state=0\toffsetX=-1166\toffsetZ=10000\toffsetY=1542\timageUrl=" + Emulator.getConfig().getValue("gamecenter.snowwar.artic.bg"));
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_tree1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 80;
-		Item.X = 20;
-		Item.Y = 8;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 81;
-		Item.X = 2;
-		Item.Y = 21;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 82;
-		Item.X = 23;
-		Item.Y = 38;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 83;
-		Item.X = 23;
-		Item.Y = 42;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 84;
-		Item.X = 42;
-		Item.Y = 20;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 85;
-		Item.X = 39;
-		Item.Y = 21;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 86;
-		Item.X = 12;
-		Item.Y = 18;
-		Item.Rot = 4;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 87;
-		Item.X = 11;
-		Item.Y = 18;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 88;
-		Item.X = 40;
-		Item.Y = 37;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 89;
-		Item.X = 23;
-		Item.Y = 41;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 90;
-		Item.X = 43;
-		Item.Y = 20;
-		Item.Rot = 2;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 91;
-		Item.X = 39;
-		Item.Y = 20;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_tree1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 92;
-		Item.X = 15;
-		Item.Y = 34;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 93;
-		Item.X = 6;
-		Item.Y = 18;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 94;
-		Item.X = 7;
-		Item.Y = 18;
-		Item.Rot = 0;
-		Item.Z = 1440;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 2
-		Item.baseItem = BaseItem.snst_fence;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 95;
-		Item.X = 29;
-		Item.Y = 9;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("2");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 96;
-		Item.X = 39;
-		Item.Y = 24;
-		Item.Rot = 2;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_block1;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 97;
-		Item.X = 23;
-		Item.Y = 43;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.ads_igorraygun;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 0.1f;
-		Item.itemId = 98;
-		Item.X = 28;
-		Item.Y = 12;
-		Item.Rot = 4;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.ads_igorraygun;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 0.1f;
-		Item.itemId = 99;
-		Item.X = 41;
-		Item.Y = 33;
-		Item.Rot = 6;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.ads_igorraygun;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 0.1f;
-		Item.itemId = 100;
-		Item.X = 31;
-		Item.Y = 41;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.ads_igorraygun;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 0.1f;
-		Item.itemId = 101;
-		Item.X = 17;
-		Item.Y = 37;
-		Item.Rot = 2;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
-
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.ads_igorraygun;
-		Item.baseItem.allowWalk = false;
-		Item.baseItem.Height = 0.1f;
-		Item.itemId = 102;
-		Item.X = 11;
-		Item.Y = 21;
-		Item.Rot = 2;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 0;
+		item.X = 41;
+		item.Y = 37;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 1;
+		item.X = 2;
+		item.Y = 20;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 2;
+		item.X = 10;
+		item.Y = 18;
+		item.Rot = 6;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_tree1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 3;
+		item.X = 19;
+		item.Y = 41;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 4;
+		item.X = 41;
+		item.Y = 20;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_tree1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 5;
+		item.X = 9;
+		item.Y = 31;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 6;
+		item.X = 23;
+		item.Y = 44;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 7;
+		item.X = 4;
+		item.Y = 18;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 8;
+		item.X = 2;
+		item.Y = 20;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_tree1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 9;
+		item.X = 25;
+		item.Y = 38;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 10;
+		item.X = 2;
+		item.Y = 19;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 11;
+		item.X = 9;
+		item.Y = 18;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 12;
+		item.X = 7;
+		item.Y = 18;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 2
+		item.baseItem = BaseItem.snst_fence;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 0.0f;
+		item.itemId = 13;
+		item.X = 17;
+		item.Y = 14;
+		item.Rot = 2;
+		item.Z = 0;
+		item.extraData.setExtraData("2");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 14;
+		item.X = 2;
+		item.Y = 18;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_tree1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 15;
+		item.X = 49;
+		item.Y = 28;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 16;
+		item.X = 2;
+		item.Y = 22;
+		item.Rot = 6;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 17;
+		item.X = 5;
+		item.Y = 18;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 18;
+		item.X = 4;
+		item.Y = 18;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 19;
+		item.X = 39;
+		item.Y = 22;
+		item.Rot = 2;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 20;
+		item.X = 39;
+		item.Y = 23;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 2
+		item.baseItem = BaseItem.snst_fence;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 0.0f;
+		item.itemId = 21;
+		item.X = 24;
+		item.Y = 44;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_tree1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 22;
+		item.X = 36;
+		item.Y = 15;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 23;
+		item.X = 23;
+		item.Y = 44;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_tree1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 24;
+		item.X = 47;
+		item.Y = 32;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 25;
+		item.X = 39;
+		item.Y = 37;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 26;
+		item.X = 8;
+		item.Y = 18;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 27;
+		item.X = 2;
+		item.Y = 19;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_tree1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 28;
+		item.X = 6;
+		item.Y = 20;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 29;
+		item.X = 2;
+		item.Y = 18;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 2
+		item.baseItem = BaseItem.snst_fence;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 0.0f;
+		item.itemId = 30;
+		item.X = 15;
+		item.Y = 14;
+		item.Rot = 2;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_tree1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 31;
+		item.X = 26;
+		item.Y = 6;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 32;
+		item.X = 39;
+		item.Y = 23;
+		item.Rot = 4;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 33;
+		item.X = 23;
+		item.Y = 38;
+		item.Rot = 2;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_tree1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 34;
+		item.X = 10;
+		item.Y = 26;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 35;
+		item.X = 23;
+		item.Y = 45;
+		item.Rot = 4;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 36;
+		item.X = 39;
+		item.Y = 21;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 37;
+		item.X = 5;
+		item.Y = 18;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 38;
+		item.X = 39;
+		item.Y = 24;
+		item.Rot = 6;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_tree1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 39;
+		item.X = 13;
+		item.Y = 15;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 40;
+		item.X = 3;
+		item.Y = 18;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 2
+		item.baseItem = BaseItem.snst_fence;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 0.0f;
+		item.itemId = 41;
+		item.X = 13;
+		item.Y = 14;
+		item.Rot = 2;
+		item.Z = 0;
+		item.extraData.setExtraData("1");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_tree1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 42;
+		item.X = 30;
+		item.Y = 7;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 43;
+		item.X = 40;
+		item.Y = 20;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 2
+		item.baseItem = BaseItem.snst_fence;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 0.0f;
+		item.itemId = 44;
+		item.X = 29;
+		item.Y = 7;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("1");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 2
+		item.baseItem = BaseItem.snst_fence;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 0.0f;
+		item.itemId = 45;
+		item.X = 21;
+		item.Y = 14;
+		item.Rot = 2;
+		item.Z = 0;
+		item.extraData.setExtraData("2");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 2
+		item.baseItem = BaseItem.snst_fence;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 0.0f;
+		item.itemId = 46;
+		item.X = 24;
+		item.Y = 40;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 47;
+		item.X = 23;
+		item.Y = 40;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_tree1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 48;
+		item.X = 15;
+		item.Y = 10;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 49;
+		item.X = 37;
+		item.Y = 37;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_tree1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 50;
+		item.X = 20;
+		item.Y = 4;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 51;
+		item.X = 3;
+		item.Y = 18;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 52;
+		item.X = 23;
+		item.Y = 40;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 53;
+		item.X = 2;
+		item.Y = 22;
+		item.Rot = 2;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 54;
+		item.X = 43;
+		item.Y = 20;
+		item.Rot = 6;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 55;
+		item.X = 23;
+		item.Y = 39;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_tree1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 56;
+		item.X = 45;
+		item.Y = 25;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 57;
+		item.X = 23;
+		item.Y = 42;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 58;
+		item.X = 42;
+		item.Y = 20;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 59;
+		item.X = 9;
+		item.Y = 18;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 60;
+		item.X = 10;
+		item.Y = 18;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 2
+		item.baseItem = BaseItem.snst_fence;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 0.0f;
+		item.itemId = 61;
+		item.X = 24;
+		item.Y = 38;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("1");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 62;
+		item.X = 11;
+		item.Y = 18;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 63;
+		item.X = 39;
+		item.Y = 37;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 64;
+		item.X = 8;
+		item.Y = 18;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 65;
+		item.X = 39;
+		item.Y = 20;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 66;
+		item.X = 38;
+		item.Y = 37;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 67;
+		item.X = 40;
+		item.Y = 37;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 68;
+		item.X = 2;
+		item.Y = 21;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 2
+		item.baseItem = BaseItem.snst_fence;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 0.0f;
+		item.itemId = 69;
+		item.X = 24;
+		item.Y = 42;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("2");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 70;
+		item.X = 39;
+		item.Y = 22;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 71;
+		item.X = 38;
+		item.Y = 37;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 72;
+		item.X = 40;
+		item.Y = 20;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_tree1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 73;
+		item.X = 28;
+		item.Y = 47;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 74;
+		item.X = 6;
+		item.Y = 18;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.s_snowball_machine;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 0.0f;
+		item.itemId = 75;
+		item.X = 26;
+		item.Y = 24;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_tree1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 76;
+		item.X = 5;
+		item.Y = 24;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 77;
+		item.X = 41;
+		item.Y = 20;
+		item.Rot = 4;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 2
+		item.baseItem = BaseItem.snst_fence;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 0.0f;
+		item.itemId = 78;
+		item.X = 19;
+		item.Y = 14;
+		item.Rot = 2;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.ads_background;
+		item.baseItem.allowWalk = true;
+		item.baseItem.height = 0.0f;
+		item.baseItem.itemExtraType = MapStuffData.TYPE_ID;
+		item.itemId = 79;
+		item.X = 0;
+		item.Y = 19;
+		item.Rot = 1;
+		item.Z = 0;
+		item.extraData = new MapStuffData("state=0\toffsetX=-1166\toffsetZ=10000\toffsetY=1542\timageUrl=" + Emulator.getConfig().getValue("gamecenter.snowwar.artic.bg"));
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_tree1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 80;
+		item.X = 20;
+		item.Y = 8;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 81;
+		item.X = 2;
+		item.Y = 21;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 82;
+		item.X = 23;
+		item.Y = 38;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 83;
+		item.X = 23;
+		item.Y = 42;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 84;
+		item.X = 42;
+		item.Y = 20;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 85;
+		item.X = 39;
+		item.Y = 21;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 86;
+		item.X = 12;
+		item.Y = 18;
+		item.Rot = 4;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 87;
+		item.X = 11;
+		item.Y = 18;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 88;
+		item.X = 40;
+		item.Y = 37;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 89;
+		item.X = 23;
+		item.Y = 41;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 90;
+		item.X = 43;
+		item.Y = 20;
+		item.Rot = 2;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 91;
+		item.X = 39;
+		item.Y = 20;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_tree1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 92;
+		item.X = 15;
+		item.Y = 34;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 93;
+		item.X = 6;
+		item.Y = 18;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 94;
+		item.X = 7;
+		item.Y = 18;
+		item.Rot = 0;
+		item.Z = 1440;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 2
+		item.baseItem = BaseItem.snst_fence;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 0.0f;
+		item.itemId = 95;
+		item.X = 29;
+		item.Y = 9;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("2");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 96;
+		item.X = 39;
+		item.Y = 24;
+		item.Rot = 2;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_block1;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 97;
+		item.X = 23;
+		item.Y = 43;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.ads_igorraygun;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 0.1f;
+		item.itemId = 98;
+		item.X = 28;
+		item.Y = 12;
+		item.Rot = 4;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.ads_igorraygun;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 0.1f;
+		item.itemId = 99;
+		item.X = 41;
+		item.Y = 33;
+		item.Rot = 6;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.ads_igorraygun;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 0.1f;
+		item.itemId = 100;
+		item.X = 31;
+		item.Y = 41;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.ads_igorraygun;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 0.1f;
+		item.itemId = 101;
+		item.X = 17;
+		item.Y = 37;
+		item.Rot = 2;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
+
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.ads_igorraygun;
+		item.baseItem.allowWalk = false;
+		item.baseItem.height = 0.1f;
+		item.itemId = 102;
+		item.X = 11;
+		item.Y = 21;
+		item.Rot = 2;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
 
 
 		spawnsBLUE.add(new SpawnPoint(22,9));

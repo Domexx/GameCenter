@@ -14,12 +14,12 @@ import java.util.Map;
 
 public class DragonCave extends Arena {
 	public DragonCave() {
-		GameFuseObject Item;
+		GameFuseObject item;
 
-		ArenaType = 9;
-		ArenaHeight = 50;
-		ArenaWidth = 50;
-		HeightMap = "" +
+		arenaType = 9;
+		arenaHeight = 50;
+		arenaWidth = 50;
+		heightMap = "" +
 				"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\r" +
 				"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\r" +
 				"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\r" +
@@ -71,462 +71,462 @@ public class DragonCave extends Arena {
 				"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\r" +
 				"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\r";
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_iceblock;
-		Item.baseItem.allowWalk= false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 0;
-		Item.X = 9;
-		Item.Y = 14;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem.allowWalk= false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 0;
+		item.X = 9;
+		item.Y = 14;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_ballpile;
-		Item.baseItem.allowWalk= true;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 1;
-		Item.X = 22;
-		Item.Y = 27;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem.allowWalk= true;
+		item.baseItem.height = 0.0f;
+		item.itemId = 1;
+		item.X = 22;
+		item.Y = 27;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_ballpile;
-		Item.baseItem.allowWalk= true;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 2;
-		Item.X = 8;
-		Item.Y = 20;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem.allowWalk= true;
+		item.baseItem.height = 0.0f;
+		item.itemId = 2;
+		item.X = 8;
+		item.Y = 20;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_ballpile;
-		Item.baseItem.allowWalk= true;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 3;
-		Item.X = 8;
-		Item.Y = 26;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem.allowWalk= true;
+		item.baseItem.height = 0.0f;
+		item.itemId = 3;
+		item.X = 8;
+		item.Y = 26;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_iceblock;
-		Item.baseItem.allowWalk= false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 4;
-		Item.X = 35;
-		Item.Y = 30;
-		Item.Rot = 2;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem.allowWalk= false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 4;
+		item.X = 35;
+		item.Y = 30;
+		item.Rot = 2;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_iceblock;
-		Item.baseItem.allowWalk= false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 5;
-		Item.X = 22;
-		Item.Y = 17;
-		Item.Rot = 2;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem.allowWalk= false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 5;
+		item.X = 22;
+		item.Y = 17;
+		item.Rot = 2;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_iceblock;
-		Item.baseItem.allowWalk= false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 6;
-		Item.X = 9;
-		Item.Y = 17;
-		Item.Rot = 2;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem.allowWalk= false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 6;
+		item.X = 9;
+		item.Y = 17;
+		item.Rot = 2;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_iceblock;
-		Item.baseItem.allowWalk= false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 7;
-		Item.X = 35;
-		Item.Y = 24;
-		Item.Rot = 4;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem.allowWalk= false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 7;
+		item.X = 35;
+		item.Y = 24;
+		item.Rot = 4;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_ballpile;
-		Item.baseItem.allowWalk= true;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 8;
-		Item.X = 36;
-		Item.Y = 18;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem.allowWalk= true;
+		item.baseItem.height = 0.0f;
+		item.itemId = 8;
+		item.X = 36;
+		item.Y = 18;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_ballpile;
-		Item.baseItem.allowWalk= true;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 9;
-		Item.X = 24;
-		Item.Y = 21;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem.allowWalk= true;
+		item.baseItem.height = 0.0f;
+		item.itemId = 9;
+		item.X = 24;
+		item.Y = 21;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_iceblock;
-		Item.baseItem.allowWalk= false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 10;
-		Item.X = 22;
-		Item.Y = 25;
-		Item.Rot = 4;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem.allowWalk= false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 10;
+		item.X = 22;
+		item.Y = 25;
+		item.Rot = 4;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_iceblock;
-		Item.baseItem.allowWalk= false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 11;
-		Item.X = 18;
-		Item.Y = 21;
-		Item.Rot = 2;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem.allowWalk= false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 11;
+		item.X = 18;
+		item.Y = 21;
+		item.Rot = 2;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_ballpile;
-		Item.baseItem.allowWalk= true;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 12;
-		Item.X = 8;
-		Item.Y = 23;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem.allowWalk= true;
+		item.baseItem.height = 0.0f;
+		item.itemId = 12;
+		item.X = 8;
+		item.Y = 23;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_ballpile;
-		Item.baseItem.allowWalk= true;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 13;
-		Item.X = 36;
-		Item.Y = 27;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem.allowWalk= true;
+		item.baseItem.height = 0.0f;
+		item.itemId = 13;
+		item.X = 36;
+		item.Y = 27;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_iceblock;
-		Item.baseItem.allowWalk= false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 14;
-		Item.X = 9;
-		Item.Y = 20;
-		Item.Rot = 6;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem.allowWalk= false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 14;
+		item.X = 9;
+		item.Y = 20;
+		item.Rot = 6;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_ballpile;
-		Item.baseItem.allowWalk= true;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 15;
-		Item.X = 36;
-		Item.Y = 21;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem.allowWalk= true;
+		item.baseItem.height = 0.0f;
+		item.itemId = 15;
+		item.X = 36;
+		item.Y = 21;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_ballpile;
-		Item.baseItem.allowWalk= true;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 16;
-		Item.X = 28;
-		Item.Y = 21;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem.allowWalk= true;
+		item.baseItem.height = 0.0f;
+		item.itemId = 16;
+		item.X = 28;
+		item.Y = 21;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_iceblock;
-		Item.baseItem.allowWalk= false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 17;
-		Item.X = 35;
-		Item.Y = 15;
-		Item.Rot = 2;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem.allowWalk= false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 17;
+		item.X = 35;
+		item.Y = 15;
+		item.Rot = 2;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_iceblock;
-		Item.baseItem.allowWalk= false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 18;
-		Item.X = 9;
-		Item.Y = 29;
-		Item.Rot = 2;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem.allowWalk= false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 18;
+		item.X = 9;
+		item.Y = 29;
+		item.Rot = 2;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_iceblock;
-		Item.baseItem.allowWalk= false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 19;
-		Item.X = 35;
-		Item.Y = 18;
-		Item.Rot = 6;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem.allowWalk= false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 19;
+		item.X = 35;
+		item.Y = 18;
+		item.Rot = 6;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_iceblock;
-		Item.baseItem.allowWalk= false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 20;
-		Item.X = 22;
-		Item.Y = 21;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem.allowWalk= false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 20;
+		item.X = 22;
+		item.Y = 21;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_iceblock;
-		Item.baseItem.allowWalk= false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 21;
-		Item.X = 9;
-		Item.Y = 23;
-		Item.Rot = 4;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem.allowWalk= false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 21;
+		item.X = 9;
+		item.Y = 23;
+		item.Rot = 4;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_ballpile;
-		Item.baseItem.allowWalk= true;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 22;
-		Item.X = 36;
-		Item.Y = 30;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem.allowWalk= true;
+		item.baseItem.height = 0.0f;
+		item.itemId = 22;
+		item.X = 36;
+		item.Y = 30;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_ballpile;
-		Item.baseItem.allowWalk= true;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 23;
-		Item.X = 22;
-		Item.Y = 23;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem.allowWalk= true;
+		item.baseItem.height = 0.0f;
+		item.itemId = 23;
+		item.X = 22;
+		item.Y = 23;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_ballpile;
-		Item.baseItem.allowWalk= true;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 24;
-		Item.X = 22;
-		Item.Y = 19;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem.allowWalk= true;
+		item.baseItem.height = 0.0f;
+		item.itemId = 24;
+		item.X = 22;
+		item.Y = 19;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_ballpile;
-		Item.baseItem.allowWalk= true;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 25;
-		Item.X = 8;
-		Item.Y = 14;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem.allowWalk= true;
+		item.baseItem.height = 0.0f;
+		item.itemId = 25;
+		item.X = 8;
+		item.Y = 14;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_ballpile;
-		Item.baseItem.allowWalk= true;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 26;
-		Item.X = 36;
-		Item.Y = 15;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem.allowWalk= true;
+		item.baseItem.height = 0.0f;
+		item.itemId = 26;
+		item.X = 36;
+		item.Y = 15;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_iceblock;
-		Item.baseItem.allowWalk= false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 27;
-		Item.X = 35;
-		Item.Y = 27;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem.allowWalk= false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 27;
+		item.X = 35;
+		item.Y = 27;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_iceblock;
-		Item.baseItem.allowWalk= false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 28;
-		Item.X = 35;
-		Item.Y = 21;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem.allowWalk= false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 28;
+		item.X = 35;
+		item.Y = 21;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_iceblock;
-		Item.baseItem.allowWalk= false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 29;
-		Item.X = 26;
-		Item.Y = 21;
-		Item.Rot = 6;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem.allowWalk= false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 29;
+		item.X = 26;
+		item.Y = 21;
+		item.Rot = 6;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_ballpile;
-		Item.baseItem.allowWalk= true;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 30;
-		Item.X = 8;
-		Item.Y = 17;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem.allowWalk= true;
+		item.baseItem.height = 0.0f;
+		item.itemId = 30;
+		item.X = 8;
+		item.Y = 17;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_ballpile;
-		Item.baseItem.allowWalk= true;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 31;
-		Item.X = 22;
-		Item.Y = 15;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem.allowWalk= true;
+		item.baseItem.height = 0.0f;
+		item.itemId = 31;
+		item.X = 22;
+		item.Y = 15;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_iceblock;
-		Item.baseItem.allowWalk= false;
-		Item.baseItem.Height = 1.0f;
-		Item.itemId = 32;
-		Item.X = 9;
-		Item.Y = 26;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem.allowWalk= false;
+		item.baseItem.height = 1.0f;
+		item.itemId = 32;
+		item.X = 9;
+		item.Y = 26;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_ballpile;
-		Item.baseItem.allowWalk= true;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 33;
-		Item.X = 16;
-		Item.Y = 21;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem.allowWalk= true;
+		item.baseItem.height = 0.0f;
+		item.itemId = 33;
+		item.X = 16;
+		item.Y = 21;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_ballpile;
-		Item.baseItem.allowWalk= true;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 34;
-		Item.X = 20;
-		Item.Y = 21;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem.allowWalk= true;
+		item.baseItem.height = 0.0f;
+		item.itemId = 34;
+		item.X = 20;
+		item.Y = 21;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_ballpile;
-		Item.baseItem.allowWalk= true;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 35;
-		Item.X = 36;
-		Item.Y = 24;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem.allowWalk= true;
+		item.baseItem.height = 0.0f;
+		item.itemId = 35;
+		item.X = 36;
+		item.Y = 24;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.ads_background;
-		Item.baseItem.allowWalk= true;
-		Item.baseItem.Height = 0.0f;
-		Item.baseItem.itemExtraType = MapStuffData.TYPE_ID;
-		Item.itemId = 36;
-		Item.X = 0;
-		Item.Y = 22;
-		Item.Rot = 1;
-		Item.Z = 0;
-		Item.extraData = new MapStuffData("state=0\toffsetX=-1070\toffsetZ=9920\toffsetY=1520\timageUrl=" + Emulator.getConfig().getValue("gamecenter.snowwar.dragoncave.bg"));
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.ads_background;
+		item.baseItem.allowWalk= true;
+		item.baseItem.height = 0.0f;
+		item.baseItem.itemExtraType = MapStuffData.TYPE_ID;
+		item.itemId = 36;
+		item.X = 0;
+		item.Y = 22;
+		item.Rot = 1;
+		item.Z = 0;
+		item.extraData = new MapStuffData("state=0\toffsetX=-1070\toffsetZ=9920\toffsetY=1520\timageUrl=" + Emulator.getConfig().getValue("gamecenter.snowwar.dragoncave.bg"));
+		fuseObjects.add(item);
 
-		Item = new GameFuseObject();// 1
-		Item.baseItem = BaseItem.snst_ballpile;
-		Item.baseItem.allowWalk= true;
-		Item.baseItem.Height = 0.0f;
-		Item.itemId = 37;
-		Item.X = 8;
-		Item.Y = 29;
-		Item.Rot = 0;
-		Item.Z = 0;
-		Item.extraData.setExtraData("0");
-		fuseObjects.add(Item);
+		item = new GameFuseObject();// 1
+		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem.allowWalk= true;
+		item.baseItem.height = 0.0f;
+		item.itemId = 37;
+		item.X = 8;
+		item.Y = 29;
+		item.Rot = 0;
+		item.Z = 0;
+		item.extraData.setExtraData("0");
+		fuseObjects.add(item);
 
 		spawnsBLUE.add(new SpawnPoint(10,10));
 		spawnsRED.add(new SpawnPoint(11,11));

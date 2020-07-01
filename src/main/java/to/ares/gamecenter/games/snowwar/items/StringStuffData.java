@@ -8,15 +8,6 @@ import com.eu.habbo.messages.ServerMessage;
  */
 public class StringStuffData extends ExtraDataBase {
     public static final int TYPE_ID = 0;
-
-    @Override
-    public int getType() {
-        return TYPE_ID;
-    }
-
-
-
-
     public String extraData;
 
     public StringStuffData(StuffDataReader data) {
@@ -56,5 +47,10 @@ public class StringStuffData extends ExtraDataBase {
     @Override
     public void serializeComposer(ServerMessage writer) {
         writer.appendString(this.extraData);
+    }
+
+    @Override
+    public int getType() {
+        return TYPE_ID;
     }
 }

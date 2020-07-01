@@ -14,7 +14,7 @@ public class SerializeGame2 {
         msg.appendInt(queue.room.roomId);
         msg.appendString(queue.room.Name);
         msg.appendInt(0); // notused
-        msg.appendInt(queue.room.ArenaType.ArenaType);
+        msg.appendInt(queue.room.ArenaType.arenaType);
         msg.appendInt(SnowWar.TEAMS.length);
         msg.appendInt(SnowWar.MAXPLAYERS);
         msg.appendString(queue.room.Owner);
