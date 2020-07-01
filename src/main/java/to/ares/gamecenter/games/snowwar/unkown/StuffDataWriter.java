@@ -3,9 +3,6 @@ package to.ares.gamecenter.games.snowwar.unkown;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by SpreedBlood on 2017-12-22.
- */
 public class StuffDataWriter {
     private List<Integer> savedPositions = new ArrayList<Integer>();
 

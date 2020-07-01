@@ -1,10 +1,5 @@
 package to.ares.gamecenter.games.snowwar.events;
 
-/*
- * ****************
- * @author capos *
- * ****************
- */
 public abstract class Event {
 	public final static int PLAYERLEFT = 1;
 	public final static int MOVE = 2;

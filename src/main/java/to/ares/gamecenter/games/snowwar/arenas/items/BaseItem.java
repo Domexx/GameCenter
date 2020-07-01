@@ -2,9 +2,6 @@ package to.ares.gamecenter.games.snowwar.arenas.items;
 
 import to.ares.gamecenter.games.snowwar.unkown.StringStuffData;
 
-/**
- * Created by SpreedBlood on 2017-12-22.
- */
 public class BaseItem {
     public String name;
     private String type;

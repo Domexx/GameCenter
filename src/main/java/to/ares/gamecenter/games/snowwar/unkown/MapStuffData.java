@@ -5,9 +5,6 @@ import com.eu.habbo.messages.ServerMessage;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-/**
- * Created by SpreedBlood on 2017-12-22.
- */
 public class MapStuffData extends ExtraDataBase {
     public static final int TYPE_ID = 1;
 

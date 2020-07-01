@@ -1,8 +1,5 @@
 package to.ares.gamecenter.games.snowwar;
 
-/**
- * Created by SpreedBlood on 2017-12-28.
- */
 public class Composer {
     public static void add(final Object add, final MessageWriter Message) {
         if (add == null) {

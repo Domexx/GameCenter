@@ -1,8 +1,5 @@
 package to.ares.gamecenter.games.snowwar.unkown;
 
-/**
- * Created by SpreedBlood on 2017-12-22.
- */
 public class StuffDataReader {
     public int type;
     private byte[] bytes;

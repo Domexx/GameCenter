@@ -1,9 +1,5 @@
 package to.ares.gamecenter.games.snowwar.events;
-/*
- * ****************
- * @author capos *
- * ****************
- */
+
 import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
 
 public class BallThrowToPosition extends Event {

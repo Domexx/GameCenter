@@ -137,7 +137,7 @@ public class SnowPlayerQueue {
             return;
         }
 
-        room.timeToStart = Emulator.getConfig().getInt("snowwar.game.start.time");
+        room.timeToStart = Emulator.getConfig().getInt("gamecenter.snowwar.game.start.time");
         room.status = SnowWar.TIMER_TOLOBBY;
 
         queue.broadcast(new StartCounterComposer(room.timeToStart));

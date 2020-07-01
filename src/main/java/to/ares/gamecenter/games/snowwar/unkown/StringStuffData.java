@@ -1,11 +1,7 @@
 package to.ares.gamecenter.games.snowwar.unkown;
 
-
 import com.eu.habbo.messages.ServerMessage;
 
-/**
- * Created by SpreedBlood on 2017-12-22.
- */
 public class StringStuffData extends ExtraDataBase {
     public static final int TYPE_ID = 0;
     public String extraData;
