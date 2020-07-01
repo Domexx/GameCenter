@@ -1,6 +1,7 @@
 package to.ares.gamecenter.games.snowwar.objects;
 
 import to.ares.gamecenter.games.snowwar.*;
+import to.ares.gamecenter.games.snowwar.unkown.GameFuseObject;
 import to.ares.gamecenter.games.snowwar.events.PickBallFromGameItem;
 import com.eu.habbo.habbohotel.gameclients.GameClient;
 import to.ares.gamecenter.util.MathUtil;

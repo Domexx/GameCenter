@@ -1,6 +1,6 @@
 package to.ares.gamecenter.games.snowwar.arenas;
 
-import to.ares.gamecenter.games.snowwar.GameFuseObject;
+import to.ares.gamecenter.games.snowwar.unkown.GameFuseObject;
 import to.ares.gamecenter.games.snowwar.SnowWarRoom;
 import to.ares.gamecenter.games.snowwar.objects.GameItemObject;
 import to.ares.gamecenter.games.snowwar.pathfinding.SpawnPoint;

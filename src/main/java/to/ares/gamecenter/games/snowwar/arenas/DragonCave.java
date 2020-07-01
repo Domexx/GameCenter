@@ -1,10 +1,13 @@
 package to.ares.gamecenter.games.snowwar.arenas;
 
 import com.eu.habbo.Emulator;
-import to.ares.gamecenter.games.snowwar.GameFuseObject;
+import to.ares.gamecenter.games.snowwar.arenas.items.AdsBackgroundItem;
+import to.ares.gamecenter.games.snowwar.arenas.items.SnowBallPileItem;
+import to.ares.gamecenter.games.snowwar.arenas.items.SnowIceBlockItem;
+import to.ares.gamecenter.games.snowwar.unkown.GameFuseObject;
 import to.ares.gamecenter.games.snowwar.SnowWarRoom;
-import to.ares.gamecenter.games.snowwar.items.BaseItem;
-import to.ares.gamecenter.games.snowwar.items.MapStuffData;
+import to.ares.gamecenter.games.snowwar.arenas.items.BaseItem;
+import to.ares.gamecenter.games.snowwar.unkown.MapStuffData;
 import to.ares.gamecenter.games.snowwar.objects.GameItemObject;
 import to.ares.gamecenter.games.snowwar.objects.PileGameObject;
 import to.ares.gamecenter.games.snowwar.pathfinding.SpawnPoint;
@@ -71,7 +74,7 @@ public class DragonCave extends Arena {
 				"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\r";
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 0;
@@ -83,7 +86,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 1;
@@ -95,7 +98,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 2;
@@ -107,7 +110,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 3;
@@ -119,7 +122,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 4;
@@ -131,7 +134,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 5;
@@ -143,7 +146,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 6;
@@ -155,7 +158,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 7;
@@ -167,7 +170,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 8;
@@ -179,7 +182,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 9;
@@ -191,7 +194,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 10;
@@ -203,7 +206,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 11;
@@ -215,7 +218,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 12;
@@ -227,7 +230,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 13;
@@ -239,7 +242,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 14;
@@ -251,7 +254,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 15;
@@ -263,7 +266,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 16;
@@ -275,7 +278,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 17;
@@ -287,7 +290,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 18;
@@ -299,7 +302,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 19;
@@ -311,7 +314,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 20;
@@ -323,7 +326,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 21;
@@ -335,7 +338,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 22;
@@ -347,7 +350,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 23;
@@ -359,7 +362,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 24;
@@ -371,7 +374,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 25;
@@ -383,7 +386,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 26;
@@ -395,7 +398,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 27;
@@ -407,7 +410,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 28;
@@ -419,7 +422,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 29;
@@ -431,7 +434,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 30;
@@ -443,7 +446,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 31;
@@ -455,7 +458,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_iceblock;
+		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 32;
@@ -467,7 +470,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 33;
@@ -479,7 +482,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 34;
@@ -491,7 +494,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 35;
@@ -503,7 +506,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.ads_background;
+		item.baseItem = new AdsBackgroundItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
 		item.baseItem.itemExtraType = MapStuffData.TYPE_ID;
@@ -516,7 +519,7 @@ public class DragonCave extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 37;
