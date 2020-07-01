@@ -57,7 +57,7 @@ public class Tile {
     public void _lR(GameFuseObject fuseItem)
     {
         _0E8.add(fuseItem);
-        _4AO((int) (fuseItem.baseItem.Height * Tile.TILE_SIZE));
+        _4AO((int) (fuseItem.baseItem.height * Tile.TILE_SIZE));
     }
 
     public void _4AO(int _arg1){

@@ -409,7 +409,7 @@ public class HumanGameObject extends GameItemObject {
         if (items.size() == 1) {
             final GameFuseObject item = items.get(0);
             final Direction8 dir = Direction8.getDirection(item.Rot);
-            if (dir == humanDir && item.baseItem.Name.equals("ads_igorraygun")) {
+            if (dir == humanDir && item.baseItem.name.equals("ads_igorraygun")) {
                 snowWarPlayer.throwSnowballFlood(item.X + (dir.getDiffX() * pow), item.Y + (dir.getDiffY() * pow));
             }
         }

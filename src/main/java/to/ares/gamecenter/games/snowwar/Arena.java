@@ -8,11 +8,11 @@ import java.util.List;
 import java.util.Map;
 
 public abstract class Arena {
-	public int ArenaHeight;
-	public int ArenaType;
-	public int ArenaWidth;
+	public int arenaHeight;
+	public int arenaType;
+	public int arenaWidth;
 
-	public String HeightMap;
+	public String heightMap;
 
 	public List<GameFuseObject> fuseObjects = new ArrayList<GameFuseObject>(200);
 

@@ -10,9 +10,9 @@ import com.eu.habbo.messages.ServerMessage;
  */
 public class SerializeArena {
     public static void parse(final ServerMessage msg, final SnowWarRoom arena) {
-        msg.appendInt(arena.ArenaType.ArenaWidth);
-        msg.appendInt(arena.ArenaType.ArenaHeight);
-        msg.appendString(arena.ArenaType.HeightMap);
+        msg.appendInt(arena.ArenaType.arenaWidth);
+        msg.appendInt(arena.ArenaType.arenaHeight);
+        msg.appendString(arena.ArenaType.heightMap);
         msg.appendInt(arena.ArenaType.fuseObjects.size());
         for (final GameFuseObject fuseItem : arena.ArenaType.fuseObjects) {
             SerializeFuseObject.parse(msg, fuseItem);

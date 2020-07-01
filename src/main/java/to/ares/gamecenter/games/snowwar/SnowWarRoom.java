@@ -38,7 +38,7 @@ public class SnowWarRoom extends SynchronizedGameStage {
 
 		ArenaType = SnowWar.ArenaTypes[rand.nextInt(SnowWar.ArenaTypes.length)];
 		roomId = id;
-		Name = "SnowStorm level " + ArenaType.ArenaType;
+		Name = "SnowStorm level " + ArenaType.arenaType;
 		map = new SnowWarGameStage();
 		map.initialize(ArenaType);
 		for (final int TeamId : SnowWar.TEAMS) {
