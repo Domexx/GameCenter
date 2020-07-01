@@ -10,7 +10,7 @@ public class PlayerLeft extends Event {
 	public HumanGameObject player;
 
 	public PlayerLeft(final HumanGameObject player) {
-		EventType = PLAYERLEFT;
+		eventType = PLAYERLEFT;
 		this.player = player;
 	}
 

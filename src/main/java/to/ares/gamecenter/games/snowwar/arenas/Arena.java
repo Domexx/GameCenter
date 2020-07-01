@@ -1,5 +1,7 @@
-package to.ares.gamecenter.games.snowwar;
+package to.ares.gamecenter.games.snowwar.arenas;
 
+import to.ares.gamecenter.games.snowwar.GameFuseObject;
+import to.ares.gamecenter.games.snowwar.SnowWarRoom;
 import to.ares.gamecenter.games.snowwar.objects.GameItemObject;
 import to.ares.gamecenter.games.snowwar.pathfinding.SpawnPoint;
 
@@ -16,8 +18,8 @@ public abstract class Arena {
 
 	public List<GameFuseObject> fuseObjects = new ArrayList<GameFuseObject>(200);
 
-	public List<SpawnPoint> spawnsBLUE = new ArrayList<SpawnPoint>(5);
-	public List<SpawnPoint> spawnsRED = new ArrayList<SpawnPoint>(5);
+	public List<SpawnPoint> spawnsBlue = new ArrayList<SpawnPoint>(5);
+	public List<SpawnPoint> spawnsRed = new ArrayList<SpawnPoint>(5);
 
 	public abstract void gameObjects(Map<Integer, GameItemObject> gameObjects, SnowWarRoom room);
 }

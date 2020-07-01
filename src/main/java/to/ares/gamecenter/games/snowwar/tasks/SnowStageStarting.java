@@ -11,7 +11,7 @@ public class SnowStageStarting {
 	public static void exec(SnowWarRoom room) {
 		room.gameObjects.clear();
 
-		room.ArenaType.gameObjects(room.gameObjects, room);
+		room.arenaType.gameObjects(room.gameObjects, room);
 
 		for (final GameItemObject obj : room.gameObjects.values()) {
 			// TODO: use "addGameObject" in ArenaType.gameObjects and set objectId

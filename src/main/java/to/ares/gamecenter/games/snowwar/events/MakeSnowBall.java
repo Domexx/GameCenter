@@ -1,4 +1,5 @@
 package to.ares.gamecenter.games.snowwar.events;
+
 /*
  * ****************
  * @author capos *
@@ -10,7 +11,7 @@ public class MakeSnowBall extends Event {
 	public HumanGameObject player;
 
 	public MakeSnowBall(final HumanGameObject player) {
-		EventType = Event.MAKESNOWBALL;
+		eventType = MAKESNOWBALL;
 		this.player = player;
 	}
 

@@ -10,7 +10,7 @@ public class AddBallToMachine extends Event {
 	public MachineGameObject gameItem;
 
 	public AddBallToMachine(final MachineGameObject gameItem) {
-		EventType = ADDBALLTOMACHINE;
+		eventType = ADDBALLTOMACHINE;
 		this.gameItem = gameItem;
 	}
 

@@ -1,6 +1,7 @@
 package to.ares.gamecenter.games.snowwar;
 
 import to.ares.gamecenter.games.snowwar.arenas.ArcticIsland;
+import to.ares.gamecenter.games.snowwar.arenas.Arena;
 import to.ares.gamecenter.games.snowwar.arenas.DragonCave;
 import to.ares.gamecenter.games.snowwar.arenas.FightNight;
 

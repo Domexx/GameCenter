@@ -11,7 +11,6 @@ import com.eu.habbo.habbohotel.users.HabboInfo;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-
 public class SnowPlayerQueue {
     private static int roomCounter;
     private static final Map<Integer, RoomQueue> roomQueue = new ConcurrentHashMap<Integer, RoomQueue>(100);
@@ -40,7 +39,7 @@ public class SnowPlayerQueue {
         }
 
         if (pickRoom.players.isEmpty()) {
-            pickRoom.room.Owner = playerData.getUsername();
+            pickRoom.room.owner = playerData.getUsername();
         }
 
         SnowWar.PLAYERS.get(cn.getHabbo().getHabboInfo().getId()).setHumanObject(new HumanGameObject(pickRoom.room, 0));
@@ -51,14 +50,14 @@ public class SnowPlayerQueue {
 
         pickRoom.players.put(playerData.getId(), cn);
 
-        if (pickRoom.room.Owner.equals(playerData.getUsername())) {
+        if (pickRoom.room.owner.equals(playerData.getUsername())) {
             cn.sendResponse(new GameCreatedComposer(pickRoom));
         } else {
             cn.sendResponse(new GameLongDataComposer(pickRoom));
         }
 
-        if (pickRoom.room.TimeToStart < 20 && pickRoom.room.STATUS == SnowWar.TIMER_TOLOBBY) {
-            cn.sendResponse(new StartCounterComposer(pickRoom.room.TimeToStart));
+        if (pickRoom.room.timeToStart < 20 && pickRoom.room.status == SnowWar.TIMER_TOLOBBY) {
+            cn.sendResponse(new StartCounterComposer(pickRoom.room.timeToStart));
         }
 
         if (pickRoom.players.size() >= Emulator.getConfig().getInt("gamecenter.snowwar.players.min")) {
@@ -75,7 +74,7 @@ public class SnowPlayerQueue {
             room.players.remove(playerObject.userId);
             room.TeamPlayers.get(playerObject.team).remove(playerObject.userId);
 
-            if (room.STATUS == SnowWar.ARENA) {
+            if (room.status == SnowWar.ARENA) {
                 synchronized (room.gameEvents) {
                     room.gameEvents.add(new PlayerLeft(playerObject));
                 }
@@ -134,14 +133,14 @@ public class SnowPlayerQueue {
     private static void startLoading(RoomQueue queue) {
         final SnowWarRoom room = queue.room;
 
-        if (room.STATUS == SnowWar.TIMER_TOLOBBY) {
+        if (room.status == SnowWar.TIMER_TOLOBBY) {
             return;
         }
 
-        room.TimeToStart = Emulator.getConfig().getInt("snowwar.game.start.time");
-        room.STATUS = SnowWar.TIMER_TOLOBBY;
+        room.timeToStart = Emulator.getConfig().getInt("snowwar.game.start.time");
+        room.status = SnowWar.TIMER_TOLOBBY;
 
-        queue.broadcast(new StartCounterComposer(room.TimeToStart));
+        queue.broadcast(new StartCounterComposer(room.timeToStart));
 
         SnowWarTask.addTask(new SnowWarTask(room, queue), 0, 1000);
     }

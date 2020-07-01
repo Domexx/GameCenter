@@ -15,7 +15,7 @@ public class CreateSnowBall extends Event {
 	public int type;
 
 	public CreateSnowBall(final SnowBallGameObject ball, final HumanGameObject player, final int x, final int y, final int type) {
-		EventType = CREATESNOWBALL;
+		eventType = CREATESNOWBALL;
 		this.ball = ball;
 		this.player = player;
 		this.x = x;

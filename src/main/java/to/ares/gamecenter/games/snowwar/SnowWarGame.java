@@ -34,6 +34,7 @@ public class SnowWarGame extends Game {
         return Emulator.getConfig().getBoolean("gamecenter.snowwar.enabled");
     }
 
+    // TODO: we could add games left to users?
     @Override
     public int getGamesLeftCount(Habbo habbo) {
         return 3;

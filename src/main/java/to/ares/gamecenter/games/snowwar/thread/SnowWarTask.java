@@ -25,52 +25,52 @@ public class SnowWarTask extends GameTask {
     @Override
     public void run() {
         try {
-            if (room.STATUS == SnowWar.ARENA_END) {
+            if (room.status == SnowWar.ARENA_END) {
                 future.cancel(false);
                 SnowArenaEnd.exec(room);
                 return;
             }
 
-            if (room.STATUS == SnowWar.ARENA) {
+            if (room.status == SnowWar.ARENA) {
                 SnowArenaRun.exec(room);
                 return;
             }
 
-            if (room.STATUS == SnowWar.STAGE_RUNNING) {
+            if (room.status == SnowWar.STAGE_RUNNING) {
                 SnowStageRun.exec(room);
-                room.STATUS = SnowWar.ARENA;
+                room.status = SnowWar.ARENA;
                 return;
             }
 
-            if (room.STATUS == SnowWar.STAGE_STARTING) {
+            if (room.status == SnowWar.STAGE_STARTING) {
                 SnowStageStarting.exec(room);
-                room.STATUS = SnowWar.STAGE_RUNNING;
+                room.status = SnowWar.STAGE_RUNNING;
                 SnowWarTask.addTask(this, 6000, SnowWar.GAMETURNMILLIS);
                 return;
             }
 
-            if (room.STATUS == SnowWar.STAGE_LOADING) {
+            if (room.status == SnowWar.STAGE_LOADING) {
                 SnowStageLoading.exec(room);
 
-                if (room.STATUS == SnowWar.STAGE_STARTING) {
+                if (room.status == SnowWar.STAGE_STARTING) {
                     future.cancel(false);
                     SnowWarTask.addTask(this, 6000, 0);
                 }
                 return;
             }
 
-            if (room.STATUS == SnowWar.TIMER_TOLOBBY) {
-                if (room.TimeToStart-- == 0) {
+            if (room.status == SnowWar.TIMER_TOLOBBY) {
+                if (room.timeToStart-- == 0) {
                     future.cancel(false);
                    
                     if(pickRoom.players.size() == 1) {
-                    	room.STATUS = 0;
+                    	room.status = 0;
                     	
                     	return;
                     }
                     
                     SnowPlayerQueue.roomLoaded(room);
-                    room.STATUS = SnowWar.STAGE_LOADING;
+                    room.status = SnowWar.STAGE_LOADING;
                     SnowWarTask.addTask(this, 100, 200);
                 }
             }

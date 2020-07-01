@@ -17,7 +17,7 @@ import java.util.List;
 public class SnowArenaRun {
     public static void exec(SnowWarRoom room) {
         if (room.players.isEmpty()) {
-            room.STATUS = SnowWar.CLOSE;
+            room.status = SnowWar.CLOSE;
             return;
         }
 
@@ -67,8 +67,8 @@ public class SnowArenaRun {
         room.subTurn();
         room.subTurn();
 
-        if (++room.Turn >= SnowWar.GAMETURNS) {
-            room.STATUS = SnowWar.ARENA_END;
+        if (++room.turn >= SnowWar.GAMETURNS) {
+            room.status = SnowWar.ARENA_END;
             room.broadcast(new StageEndingComposer());
         }
 

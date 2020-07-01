@@ -27,58 +27,6 @@ public class SnowWarPlayer {
         pointsNeed = 100;
     }
 
-    public Habbo getPlayer() {
-        return this.player;
-    }
-
-    public SnowWarRoom getSnowRoom() {
-        return this.snowRoom;
-    }
-
-    public HumanGameObject getHumanObject() {
-        return this.humanObject;
-    }
-
-    public int getLevel() {
-        return this.snowLevel;
-    }
-
-    public int getPointsNeed() {
-        return this.pointsNeed;
-    }
-
-    public int getRank() {
-        return this.rank;
-    }
-
-    public int getScore() {
-        return this.score;
-    }
-
-    public void setHumanObject(HumanGameObject humanGameObject) {
-        if (humanGameObject == null) {
-            humanObject.snowWarPlayer = null;
-            humanObject.cn = null;
-            humanObject.userId = 0;
-            humanObject = null;
-        } else {
-            humanObject = humanGameObject;
-            humanObject.snowWarPlayer = this;
-
-            humanObject.cn = player.getClient();
-            humanObject.userId = player.getHabboInfo().getId();
-            humanObject.userName = player.getHabboInfo().getUsername();
-            humanObject.look = player.getHabboInfo().getLook();
-            humanObject.motto = player.getHabboInfo().getMotto();
-            humanObject.sex = player.getHabboInfo().getGender().toString();
-        }
-    }
-
-    public void setRoom(SnowWarRoom room) {
-        snowRoom = room;
-        humanObject.currentSnowWar = room;
-    }
-
     public void userLeft() {
         if (humanObject != null && snowRoom != null) {
             SnowPlayerQueue.playerExit(snowRoom, humanObject);
@@ -164,5 +112,57 @@ public class SnowWarPlayer {
             snowRoom.gameEvents.add(new CreateSnowBall(ball, humanObject, destX, destY, type));
             snowRoom.gameEvents.add(new BallThrowToPosition(humanObject, destX, destY, 0));
         }
+    }
+
+    public Habbo getPlayer() {
+        return this.player;
+    }
+
+    public SnowWarRoom getSnowRoom() {
+        return this.snowRoom;
+    }
+
+    public HumanGameObject getHumanObject() {
+        return this.humanObject;
+    }
+
+    public int getLevel() {
+        return this.snowLevel;
+    }
+
+    public int getPointsNeed() {
+        return this.pointsNeed;
+    }
+
+    public int getRank() {
+        return this.rank;
+    }
+
+    public int getScore() {
+        return this.score;
+    }
+
+    public void setHumanObject(HumanGameObject humanGameObject) {
+        if (humanGameObject == null) {
+            humanObject.snowWarPlayer = null;
+            humanObject.cn = null;
+            humanObject.userId = 0;
+            humanObject = null;
+        } else {
+            humanObject = humanGameObject;
+            humanObject.snowWarPlayer = this;
+
+            humanObject.cn = player.getClient();
+            humanObject.userId = player.getHabboInfo().getId();
+            humanObject.userName = player.getHabboInfo().getUsername();
+            humanObject.look = player.getHabboInfo().getLook();
+            humanObject.motto = player.getHabboInfo().getMotto();
+            humanObject.sex = player.getHabboInfo().getGender().toString();
+        }
+    }
+
+    public void setRoom(SnowWarRoom room) {
+        snowRoom = room;
+        humanObject.currentSnowWar = room;
     }
 }

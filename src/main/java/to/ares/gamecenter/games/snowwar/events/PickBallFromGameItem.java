@@ -12,7 +12,7 @@ public class PickBallFromGameItem extends Event {
 	public PickBallsGameItemObject gameItem;
 
 	public PickBallFromGameItem(final HumanGameObject player, final PickBallsGameItemObject gameItem) {
-		EventType = PICKBALLFROMGAMEITEM;
+		eventType = PICKBALLFROMGAMEITEM;
 		this.player = player;
 		this.gameItem = gameItem;
 	}
