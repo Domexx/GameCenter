@@ -21,7 +21,6 @@ public class SnowWar {
 	public static final int GAMETURNS = (GAMESECONDS * 1000) / GAMETURNMILLIS;
 
 	// PLAYERS VALUES
-	public static final int MINPLAYERS = 2;
 	public static final int MAXPLAYERS = 10;
 
 	// PLAYER STATUS

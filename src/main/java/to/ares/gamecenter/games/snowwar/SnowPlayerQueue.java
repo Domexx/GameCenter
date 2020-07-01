@@ -61,7 +61,7 @@ public class SnowPlayerQueue {
             cn.sendResponse(new StartCounterComposer(pickRoom.room.TimeToStart));
         }
 
-        if (pickRoom.players.size() >= SnowWar.MINPLAYERS) {
+        if (pickRoom.players.size() >= Emulator.getConfig().getInt("gamecenter.snowwar.players.min")) {
             startLoading(pickRoom);
         }
     }
@@ -138,7 +138,7 @@ public class SnowPlayerQueue {
             return;
         }
 
-        room.TimeToStart = Emulator.getConfig().getInt("snowwar.game.timetostart");
+        room.TimeToStart = Emulator.getConfig().getInt("snowwar.game.start.time");
         room.STATUS = SnowWar.TIMER_TOLOBBY;
 
         queue.broadcast(new StartCounterComposer(room.TimeToStart));

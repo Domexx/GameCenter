@@ -73,8 +73,11 @@ public class GameCenter extends HabboPlugin implements EventListener {
     public void onEmulatorLoadedEvent(EmulatorLoadedEvent event) throws Exception {
         // SnowStorm
         Emulator.getConfig().register("gamecenter.snowwar.enabled", "true");
+
+        Emulator.getConfig().register("gamecenter.snowwar.game.start.time", "15");
+        Emulator.getConfig().register("gamecenter.snowwar.players.min", "4");
+
         Emulator.getConfig().register("gamecenter.snowwar.assets", "https://ares.to/c_images/gamecenter_snowwar/");
-        Emulator.getConfig().register("gamecenter.snowwar.timetostart", "15");
         Emulator.getConfig().register("gamecenter.snowwar.artic.bg", "https://ares.to/c_images/gamecenter_snowwar/snst_bg_1_a_big.png");
         Emulator.getConfig().register("gamecenter.snowwar.dragoncave.bg", "https://ares.to/c_images/gamecenter_snowwar/snst_bg_2_big.png");
         Emulator.getConfig().register("gamecenter.snowwar.fightnight.bg", "https://ares.to/c_images/gamecenter_snowwar/snst_bg_3_noscale.png");
