@@ -5,13 +5,12 @@ package to.ares.gamecenter.games.snowwar.items;
  */
 public class StuffDataReader {
     public int type;
-
-    public byte[] bytes;
-    public int reader;
+    private byte[] bytes;
+    private int reader;
 
     public StuffDataReader(byte[] arr) {
-        if(arr == null) {
-			/* Empty StringStuffData */
+        if (arr == null) {
+            /* Empty StringStuffData */
             bytes = new byte[2];
             return;
         }
@@ -23,11 +22,11 @@ public class StuffDataReader {
         return ((bytes[reader++] & 0xff) << 24) + ((bytes[reader++] & 0xff) << 16) + ((bytes[reader++] & 0xff) << 8) + (bytes[reader++] & 0xff);
     }
 
-    public int readInt16() {
+    private int readInt16() {
         return ((bytes[reader++] & 0xff) << 8) + (bytes[reader++] & 0xff);
     }
 
-    public int readInt8() {
+    private int readInt8() {
         return (bytes[reader++] & 0xff);
     }
 

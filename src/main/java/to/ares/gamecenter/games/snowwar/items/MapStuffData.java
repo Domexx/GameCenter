@@ -26,12 +26,11 @@ public class MapStuffData extends ExtraDataBase {
         setExtraData(data);
     }
 
-
     @Override
     public byte[] data() {
         final StuffDataWriter data = new StuffDataWriter(TYPE_ID);
         data.writeInt8(extraData.size());
-        for(final String key : extraData.keySet()) {
+        for (final String key : extraData.keySet()) {
             data.writeString(key);
             data.writeString(extraData.get(key));
         }
@@ -47,19 +46,18 @@ public class MapStuffData extends ExtraDataBase {
         }
     }
 
-
     @Override
     public void setExtraData(Object data) {
         final String sData = (String) data;
 
         final String[] values = sData.split("\t");
-        for(final String part : values) {
-            if(part.isEmpty() || part.equals("=")) {
+        for (final String part : values) {
+            if (part.isEmpty() || part.equals("=")) {
                 continue;
             }
 
             final String[] a = part.split("=");
-            if(a.length != 2) {
+            if (a.length != 2) {
                 continue;
             }
 
@@ -69,12 +67,12 @@ public class MapStuffData extends ExtraDataBase {
 
     @Override
     public String getWallLegacyString() {
-        if(extraData == null) {
+        if (extraData == null) {
             return "";
         }
 
         final String data = extraData.get(STATE);
-        if(data == null) {
+        if (data == null) {
             return "";
         }
 

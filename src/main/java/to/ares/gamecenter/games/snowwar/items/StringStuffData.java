@@ -14,13 +14,10 @@ public class StringStuffData extends ExtraDataBase {
         return TYPE_ID;
     }
 
-
-
-
     public String extraData;
 
     public StringStuffData(StuffDataReader data) {
-        if(data == null) {
+        if (data == null) {
             extraData = "";
         } else {
             extraData = data.readString();
@@ -29,7 +26,7 @@ public class StringStuffData extends ExtraDataBase {
 
     @Override
     public byte[] data() {
-        if(extraData.isEmpty()) {
+        if (extraData.isEmpty()) {
             // not save empty stringdata
             return null;
         }
@@ -41,10 +38,10 @@ public class StringStuffData extends ExtraDataBase {
 
     @Override
     public void setExtraData(Object data) {
-        if(data instanceof Integer) {
-            extraData = Integer.toString((Integer)data);
+        if (data instanceof Integer) {
+            extraData = Integer.toString((Integer) data);
         } else {
-            extraData = (String)data;
+            extraData = (String) data;
         }
     }
 

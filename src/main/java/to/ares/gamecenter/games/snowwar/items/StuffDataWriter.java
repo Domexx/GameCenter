@@ -7,12 +7,12 @@ import java.util.List;
  * Created by SpreedBlood on 2017-12-22.
  */
 public class StuffDataWriter {
-    public List<Integer> savedPositions = new ArrayList<Integer>();
+    private List<Integer> savedPositions = new ArrayList<Integer>();
 
     private byte[] bytes;
-    public int writer;
+    private int writer;
 
-    public StuffDataWriter(final int type, final int Size) {
+    private StuffDataWriter(final int type, final int Size) {
         bytes = new byte[Size];
         writeInt8(type);
     }
@@ -22,12 +22,12 @@ public class StuffDataWriter {
     }
 
     public byte[] getData() {
-        if(writer == bytes.length) {
+        if (writer == bytes.length) {
             return bytes;
         }
 
         final byte[] rtn = new byte[writer];
-        for(int i = 0;i<writer;i++) {
+        for (int i = 0; i < writer; i++) {
             rtn[i] = bytes[i];
         }
         bytes = rtn;
@@ -54,7 +54,7 @@ public class StuffDataWriter {
     public void writeString(String in) {
         final int len = in.length();
         writeInt16(len);
-        for(int i = 0;i<len;i++) {
+        for (int i = 0; i < len; i++) {
             bytes[writer++] = (byte) (in.charAt(i) & 0xff);
         }
     }
@@ -62,7 +62,7 @@ public class StuffDataWriter {
     public void writeBytes(byte[] in) {
         final int len = in.length;
         writeInt16(len);
-        for(int i = 0;i<len;i++) {
+        for (int i = 0; i < len; i++) {
             bytes[writer++] = in[i];
         }
     }
@@ -76,7 +76,7 @@ public class StuffDataWriter {
     public void writeSaved(final Object add) {
         if (add instanceof Integer) {
             final int tmp = writer;
-            writer = savedPositions.remove(savedPositions.size()-1);
+            writer = savedPositions.remove(savedPositions.size() - 1);
             writeInt32((Integer) add);
             writer = tmp;
         } else {
@@ -86,7 +86,7 @@ public class StuffDataWriter {
 
     public void writeSavedInt8(final int add) {
         final int tmp = writer;
-        writer = savedPositions.remove(savedPositions.size()-1);
+        writer = savedPositions.remove(savedPositions.size() - 1);
         writeInt8(add);
         writer = tmp;
     }

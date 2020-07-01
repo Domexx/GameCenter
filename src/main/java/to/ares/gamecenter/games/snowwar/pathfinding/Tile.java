@@ -9,7 +9,6 @@ import to.ares.gamecenter.util.MathUtil;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class Tile {
     public static int TILE_SIZE = 3200;
     public static int _37G = MathUtil._43Z((TILE_SIZE / 2));
