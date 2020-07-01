@@ -28,7 +28,7 @@ import gnu.trove.map.hash.THashMap;
 import java.lang.reflect.Field;
 import java.util.HashMap;
 
-public class GameCenter extends HabboPlugin implements EventListener {
+public class Plugin extends HabboPlugin implements EventListener {
     private final Logger LOGGER = LoggerFactory.getLogger(Emulator.class);
 
     public void onEnable() throws Exception {
