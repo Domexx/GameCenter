@@ -1,10 +1,10 @@
 package to.ares.gamecenter.games.snowwar.arenas;
 
 import com.eu.habbo.Emulator;
-import to.ares.gamecenter.games.snowwar.arenas.items.GameFuseObject;
+import to.ares.gamecenter.games.snowwar.arenas.items.*;
+import to.ares.gamecenter.games.snowwar.unkown.GameFuseObject;
 import to.ares.gamecenter.games.snowwar.SnowWarRoom;
-import to.ares.gamecenter.games.snowwar.arenas.items.BaseItem;
-import to.ares.gamecenter.games.snowwar.arenas.items.MapStuffData;
+import to.ares.gamecenter.games.snowwar.unkown.MapStuffData;
 import to.ares.gamecenter.games.snowwar.objects.GameItemObject;
 import to.ares.gamecenter.games.snowwar.objects.PileGameObject;
 import to.ares.gamecenter.games.snowwar.objects.TreeGameObject;
@@ -72,7 +72,7 @@ public class FightNight extends Arena {
 				"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\r";
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 0;
@@ -84,7 +84,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 1;
@@ -96,7 +96,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 2;
@@ -108,7 +108,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 3;
@@ -120,7 +120,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 4;
@@ -132,7 +132,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 5;
@@ -144,7 +144,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 6;
@@ -156,7 +156,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 7;
@@ -168,7 +168,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 8;
@@ -180,7 +180,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 9;
@@ -192,7 +192,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 10;
@@ -204,7 +204,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 11;
@@ -216,7 +216,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_block1;
+		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 12;
@@ -228,7 +228,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 13;
@@ -240,7 +240,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 14;
@@ -252,7 +252,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 15;
@@ -264,7 +264,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 16;
@@ -276,7 +276,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 17;
@@ -288,7 +288,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_block1;
+		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 18;
@@ -300,7 +300,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 19;
@@ -312,7 +312,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_block1;
+		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 20;
@@ -324,7 +324,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 21;
@@ -336,7 +336,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 22;
@@ -348,7 +348,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 23;
@@ -360,7 +360,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 24;
@@ -372,7 +372,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.xm09_man_a;
+		item.baseItem = new XmasManAItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
 		item.itemId = 25;
@@ -384,7 +384,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 26;
@@ -396,7 +396,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 27;
@@ -408,7 +408,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 28;
@@ -420,7 +420,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 29;
@@ -432,7 +432,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 30;
@@ -444,7 +444,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 31;
@@ -456,7 +456,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 32;
@@ -468,7 +468,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 33;
@@ -480,7 +480,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 34;
@@ -492,7 +492,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 35;
@@ -504,7 +504,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 2
-		item.baseItem = BaseItem.snst_fence;
+		item.baseItem = new SnowFenceItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
 		item.itemId = 36;
@@ -516,7 +516,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 37;
@@ -528,7 +528,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 2
-		item.baseItem = BaseItem.snst_fence;
+		item.baseItem = new SnowFenceItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
 		item.itemId = 38;
@@ -540,7 +540,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 39;
@@ -552,7 +552,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 40;
@@ -564,7 +564,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 41;
@@ -576,7 +576,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 42;
@@ -588,7 +588,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 43;
@@ -600,7 +600,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 44;
@@ -612,7 +612,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.xm09_man_c;
+		item.baseItem = new XmasManCItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
 		item.itemId = 45;
@@ -624,7 +624,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.ads_background;
+		item.baseItem = new AdsBackgroundItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
 		item.baseItem.itemExtraType = MapStuffData.TYPE_ID;
@@ -637,7 +637,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 47;
@@ -649,7 +649,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 48;
@@ -661,7 +661,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 49;
@@ -673,7 +673,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 2
-		item.baseItem = BaseItem.snst_fence;
+		item.baseItem = new SnowFenceItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
 		item.itemId = 50;
@@ -685,7 +685,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_block1;
+		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 51;
@@ -697,7 +697,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 52;
@@ -709,7 +709,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_block1;
+		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 53;
@@ -721,7 +721,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 54;
@@ -733,7 +733,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 55;
@@ -745,7 +745,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 56;
@@ -757,7 +757,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 57;
@@ -769,7 +769,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 58;
@@ -781,7 +781,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 59;
@@ -793,7 +793,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_ballpile;
+		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
 		item.itemId = 60;
@@ -805,7 +805,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_block1;
+		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 61;
@@ -817,7 +817,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.snst_tree1_d;
+		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
 		item.itemId = 62;
@@ -829,7 +829,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 2
-		item.baseItem = BaseItem.snst_fence;
+		item.baseItem = new SnowFenceItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
 		item.itemId = 63;
@@ -841,7 +841,7 @@ public class FightNight extends Arena {
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1
-		item.baseItem = BaseItem.xm09_man_b;
+		item.baseItem = new XmasManBItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
 		item.itemId = 64;

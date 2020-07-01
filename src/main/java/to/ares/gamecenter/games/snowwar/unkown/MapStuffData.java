@@ -1,4 +1,4 @@
-package to.ares.gamecenter.games.snowwar.arenas.items;
+package to.ares.gamecenter.games.snowwar.unkown;
 
 import com.eu.habbo.messages.ServerMessage;
 

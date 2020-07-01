@@ -1,4 +1,4 @@
-package to.ares.gamecenter.games.snowwar.arenas.items;
+package to.ares.gamecenter.games.snowwar.unkown;
 
 /**
  * Created by SpreedBlood on 2017-12-22.

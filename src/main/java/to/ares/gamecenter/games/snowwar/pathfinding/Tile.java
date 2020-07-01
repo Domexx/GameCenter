@@ -1,6 +1,6 @@
 package to.ares.gamecenter.games.snowwar.pathfinding;
 
-import to.ares.gamecenter.games.snowwar.arenas.items.GameFuseObject;
+import to.ares.gamecenter.games.snowwar.unkown.GameFuseObject;
 import to.ares.gamecenter.games.snowwar.objects.GameItemObject;
 import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
 import to.ares.gamecenter.games.snowwar.objects.PickBallsGameItemObject;
