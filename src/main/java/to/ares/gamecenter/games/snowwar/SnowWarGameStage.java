@@ -1,6 +1,7 @@
 package to.ares.gamecenter.games.snowwar;
 
 import to.ares.gamecenter.games.snowwar.arenas.Arena;
+import to.ares.gamecenter.games.snowwar.arenas.items.GameFuseObject;
 import to.ares.gamecenter.games.snowwar.objects.GameItemObject;
 import to.ares.gamecenter.games.snowwar.pathfinding.Direction360;
 import to.ares.gamecenter.games.snowwar.pathfinding.Direction8;

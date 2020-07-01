@@ -2,7 +2,7 @@ package to.ares.gamecenter.games.snowwar.objects;
 
 import to.ares.gamecenter.games.snowwar.SnowWarRoom;
 import to.ares.gamecenter.games.snowwar.SynchronizedGameStage;
-import to.ares.gamecenter.games.snowwar.items.BaseItem;
+import to.ares.gamecenter.games.snowwar.arenas.items.BaseItem;
 import to.ares.gamecenter.games.snowwar.pathfinding.CollisionDetection;
 import to.ares.gamecenter.games.snowwar.pathfinding.Direction360;
 import to.ares.gamecenter.games.snowwar.pathfinding.PlayerTile;

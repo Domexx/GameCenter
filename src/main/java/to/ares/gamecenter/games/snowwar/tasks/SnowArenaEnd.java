@@ -7,15 +7,14 @@ import to.ares.gamecenter.messages.outgoing.snowwar.GameEndingComposer;
 
 public class SnowArenaEnd {
     public static void exec(SnowWarRoom room) {
-
         int blueScore = 0;
         int redScore = 0;
 
-        for (final int TeamId : SnowWar.TEAMS) {
-            if (TeamId == SnowWar.TEAM_BLUE) {
-                blueScore += room.teamScore[TeamId - 1];
+        for (final int teamId : SnowWar.TEAMS) {
+            if (teamId == SnowWar.TEAM_BLUE) {
+                blueScore += room.teamScore[teamId - 1];
             } else {
-                redScore += room.teamScore[TeamId - 1];
+                redScore += room.teamScore[teamId - 1];
             }
         }
 
@@ -47,6 +46,7 @@ public class SnowArenaEnd {
                 room.mostKills = player;
             }
         }
+
         room.broadcast(new GameEndingComposer(room));
     }
 }

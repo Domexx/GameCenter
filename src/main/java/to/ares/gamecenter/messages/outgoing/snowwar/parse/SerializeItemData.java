@@ -1,7 +1,7 @@
 package to.ares.gamecenter.messages.outgoing.snowwar.parse;
 
-import to.ares.gamecenter.games.snowwar.items.BaseItem;
-import to.ares.gamecenter.games.snowwar.items.Item;
+import to.ares.gamecenter.games.snowwar.arenas.items.BaseItem;
+import to.ares.gamecenter.games.snowwar.arenas.items.Item;
 import com.eu.habbo.messages.ServerMessage;
 
 /**

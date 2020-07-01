@@ -1,4 +1,4 @@
-package to.ares.gamecenter.games.snowwar.items;
+package to.ares.gamecenter.games.snowwar.arenas.items;
 
 import java.util.ArrayList;
 import java.util.List;

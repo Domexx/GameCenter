@@ -1,10 +1,10 @@
 package to.ares.gamecenter.games.snowwar.arenas;
 
 import com.eu.habbo.Emulator;
-import to.ares.gamecenter.games.snowwar.GameFuseObject;
+import to.ares.gamecenter.games.snowwar.arenas.items.GameFuseObject;
 import to.ares.gamecenter.games.snowwar.SnowWarRoom;
-import to.ares.gamecenter.games.snowwar.items.BaseItem;
-import to.ares.gamecenter.games.snowwar.items.MapStuffData;
+import to.ares.gamecenter.games.snowwar.arenas.items.BaseItem;
+import to.ares.gamecenter.games.snowwar.arenas.items.MapStuffData;
 import to.ares.gamecenter.games.snowwar.objects.GameItemObject;
 import to.ares.gamecenter.games.snowwar.objects.PileGameObject;
 import to.ares.gamecenter.games.snowwar.objects.TreeGameObject;

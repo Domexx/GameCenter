@@ -64,7 +64,7 @@ public class SnowBallGameObject extends GameItemObject {
         deltaY = MathUtil._43Z((deltaY / 200));
         direction._1ji(Direction360.getRot(deltaX, deltaY));
 
-        int local7 = (SquareRoot.sqrt((deltaX * deltaX) + (deltaY * deltaY)) * 200);
+        int local7 = (SquareRoot.squareRoot((deltaX * deltaX) + (deltaY * deltaY)) * 200);
         launchType = type;
         getMoveType(type, local7);
 

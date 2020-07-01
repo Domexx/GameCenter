@@ -1,6 +1,6 @@
 package to.ares.gamecenter.games.snowwar.pathfinding;
 
-import to.ares.gamecenter.games.snowwar.GameFuseObject;
+import to.ares.gamecenter.games.snowwar.arenas.items.GameFuseObject;
 import to.ares.gamecenter.games.snowwar.objects.GameItemObject;
 import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
 import to.ares.gamecenter.games.snowwar.objects.PickBallsGameItemObject;
@@ -15,12 +15,12 @@ public class Tile {
     public static int _03y = (TILE_SIZE + _37G);
     public static int _1L = ((int)Math.sqrt(((Tile.TILE_SIZE * Tile.TILE_SIZE) + (Tile.TILE_SIZE * Tile.TILE_SIZE))));
 
-    private final PlayerTile _location;
+    private final PlayerTile location;
     private final Tile[] _3ob;
     private GameItemObject _0Zr;
     public int[] _4gH;
     private boolean blocked;
-    private int _height;
+    private int height;
 
     public PickBallsGameItemObject pickBallsItem;
 
@@ -29,7 +29,7 @@ public class Tile {
     public Tile(int _arg1, int _arg2){
         _3ob = new Tile[8];
         _4gH = new int[]{_arg1, _arg2, 0};
-        _location = new PlayerTile((_arg1 * TILE_SIZE), (_arg2 * TILE_SIZE), 0);
+        location = new PlayerTile((_arg1 * TILE_SIZE), (_arg2 * TILE_SIZE), 0);
         _0E8 = new ArrayList<GameFuseObject>();
     }
 
@@ -61,9 +61,9 @@ public class Tile {
     }
 
     public void _4AO(int _arg1){
-        _height += _arg1;
-        if (_height < 0){
-            _height = 0;
+        height += _arg1;
+        if (height < 0){
+            height = 0;
         };
     }
 
@@ -73,15 +73,15 @@ public class Tile {
     }
 
     public PlayerTile location(){
-        return (_location);
+        return (location);
     }
 
     public boolean isTooAway(PlayerTile _arg1){
-        int local1 = (_location.x() - _arg1.x());
+        int local1 = (location.x() - _arg1.x());
         if (local1 < 0){
             local1 = -(local1);
         };
-        int local2 = (_location.y() - _arg1.y());
+        int local2 = (location.y() - _arg1.y());
         if (local2 < 0){
             local2 = -(local2);
         };
@@ -156,12 +156,12 @@ public class Tile {
 
     public int distanceTo(Tile _arg1)
     {
-        return _location.distanceTo(_arg1.location());
+        return location.distanceTo(_arg1.location());
     }
 
     public Direction8 directionTo(Tile _arg1)
     {
-        return _location.directionTo(_arg1.location());
+        return location.directionTo(_arg1.location());
     }
 
     public Tile getNodeAt(Direction8 _arg1)
@@ -184,12 +184,12 @@ public class Tile {
     }
 
     public int height(){
-        return _height;
+        return height;
     }
 
     @Override
 	public String toString(){
-        return ((((((" X:" + _location.x()) + " Y:") + _location.y()) + " Z:") + _location.z()));
+        return ((((((" X:" + location.x()) + " Y:") + location.y()) + " Z:") + location.z()));
     }
 
     public void setBlocked(boolean block){
