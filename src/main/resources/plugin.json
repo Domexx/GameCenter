@@ -1,0 +1,5 @@
+{
+  "main" : "to.ares.gamecenter.Plugin",
+  "name" : "GameCenter",
+  "author" : "necmi & dome"
+}
