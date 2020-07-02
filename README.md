@@ -1,4 +1,3 @@
-
 # ![Ares A](https://i.imgur.com/1zelxEp.png)  
   
 [![Discord](https://img.shields.io/discord/683417203546128387?color=%237289DA&label=Discord)](https://discord.gg/pN7ZMFw)  
@@ -37,7 +36,7 @@ A GameCenter Plugin made for Arcturus Morningstar which includes SnowStorm & Fas
    - If you use your own version of the OpenSourceSwf search into your **HabboMain.as** for
    `var _local_2:XML = <config>`
    
-  Below this you'll see the  **<'asset-libraries'>** section
+  Below this you'll see the  **`<asset-libraries>`** section
   replace the section with the following:
   
 
