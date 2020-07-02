@@ -2,7 +2,7 @@ package to.ares.gamecenter.games.snowwar.events;
 
 import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
 
-public class BallThrowToHumanEvent extends Event {
+public class BallThrowToHumanEvent extends BaseEvent {
 	public HumanGameObject attacker;
 	public HumanGameObject victim;
 	public int type;

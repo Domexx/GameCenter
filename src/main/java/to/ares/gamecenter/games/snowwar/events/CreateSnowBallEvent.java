@@ -3,7 +3,7 @@ package to.ares.gamecenter.games.snowwar.events;
 import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
 import to.ares.gamecenter.games.snowwar.objects.SnowBallGameObject;
 
-public class CreateSnowBallEvent extends Event {
+public class CreateSnowBallEvent extends BaseEvent {
 	public SnowBallGameObject ball;
 	public HumanGameObject player;
 	public int x;
