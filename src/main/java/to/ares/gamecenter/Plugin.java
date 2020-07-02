@@ -16,6 +16,7 @@ import com.eu.habbo.plugin.events.users.UserDisconnectEvent;
 import com.eu.habbo.plugin.events.users.UserLoginEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import to.ares.gamecenter.games.GameManager;
 import to.ares.gamecenter.games.fastfood.FastFoodGame;
 import to.ares.gamecenter.games.snowwar.SnowWarGame;
 import to.ares.gamecenter.messages.incoming.snowwar.*;
@@ -28,14 +29,15 @@ import gnu.trove.map.hash.THashMap;
 import java.lang.reflect.Field;
 import java.util.HashMap;
 
-public class GameCenter extends HabboPlugin implements EventListener {
+public class Plugin extends HabboPlugin implements EventListener {
     private final Logger LOGGER = LoggerFactory.getLogger(Emulator.class);
 
     public void onEnable() throws Exception {
         Emulator.getPluginManager().registerEvents(this, this);
 
-        GameManager.makeSet();
+        GameManager gameManager = new GameManager();
 
+        // @TODO: maybe we could do that better here....
         SnowWar.PLAYERS = new HashMap<>();
         SnowWarWorkerTasks.initWorkers();
 
@@ -74,6 +76,9 @@ public class GameCenter extends HabboPlugin implements EventListener {
         // SnowStorm
         Emulator.getConfig().register("gamecenter.snowwar.enabled", "true");
 
+        Emulator.getConfig().register("gamecenter.snowwar.game.background.color", "93d4f3");
+        Emulator.getConfig().register("gamecenter.snowwar.game.text.color", "000000");
+
         Emulator.getConfig().register("gamecenter.snowwar.game.start.time", "15");
         Emulator.getConfig().register("gamecenter.snowwar.players.min", "4");
 
@@ -84,8 +89,13 @@ public class GameCenter extends HabboPlugin implements EventListener {
 
         // FastFood
         Emulator.getConfig().register("gamecenter.fastfood.enabled", "true");
+
+        Emulator.getConfig().register("gamecenter.fastfood.background.color", "68bbd2");
+        Emulator.getConfig().register("gamecenter.fastfood.text.color", "ffffff");
+
         Emulator.getConfig().register("gamecenter.fastfood.assets", "https://ares.to/c_images/gamecenter_basejump/");
         Emulator.getConfig().register("gamecenter.fastfood.apiKey", "");
+
         Emulator.getConfig().register("gamecenter.fastfood.theme", "default");
 
         // PacketManager

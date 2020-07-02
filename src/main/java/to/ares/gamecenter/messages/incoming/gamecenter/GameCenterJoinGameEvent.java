@@ -1,18 +1,15 @@
 package to.ares.gamecenter.messages.incoming.gamecenter;
 
-import com.eu.habbo.messages.ClientMessage;
-import to.ares.gamecenter.Game;
-import to.ares.gamecenter.GameManager;
 import com.eu.habbo.messages.incoming.MessageHandler;
+import to.ares.gamecenter.games.Game;
+import to.ares.gamecenter.games.GameManager;
 
 public class GameCenterJoinGameEvent extends MessageHandler {
     @Override
     public void handle() throws Exception {
-        ClientMessage originalPacket = this.packet.clone();
-
         int gameId = this.packet.readInt();
 
-        Game game = GameManager.getGameById(gameId);
+        Game game = GameManager.getGame(gameId);
 
         if(game != null) {
             game.onPlay(gameId, this.client.getHabbo());
