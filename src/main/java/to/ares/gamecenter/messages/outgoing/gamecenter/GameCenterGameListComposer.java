@@ -3,8 +3,8 @@ package to.ares.gamecenter.messages.outgoing.gamecenter;
 import com.eu.habbo.messages.ServerMessage;
 import com.eu.habbo.messages.outgoing.MessageComposer;
 import com.eu.habbo.messages.outgoing.Outgoing;
-import to.ares.gamecenter.Game;
-import to.ares.gamecenter.GameManager;
+import to.ares.gamecenter.games.Game;
+import to.ares.gamecenter.games.GameManager;
 
 import java.util.List;
 
@@ -21,7 +21,7 @@ public class GameCenterGameListComposer extends MessageComposer {
             this.response.appendString(game.getCode());
             this.response.appendString(game.getBackgroundColor());
             this.response.appendString(game.getTextColor());
-            this.response.appendString(game.getAssetPath());
+            this.response.appendString(game.getAssets());
             this.response.appendString("");
         }
 

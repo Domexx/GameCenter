@@ -7,7 +7,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import to.ares.gamecenter.Game;
+import to.ares.gamecenter.games.Game;
 import to.ares.gamecenter.messages.outgoing.gamecenter.GameCenterGameFrameURLComposer;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -17,40 +17,9 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 public class FastFoodGame extends Game {
-    private final Logger LOGGER = LoggerFactory.getLogger(Emulator.class);
 
     public FastFoodGame(int gameId) {
         super(gameId);
-    }
-
-    @Override
-    public String getCode() {
-        return "basejump";
-    }
-
-    @Override
-    public String getBackgroundColor() {
-        return "68bbd2";
-    }
-
-    @Override
-    public String getTextColor() {
-        return "";
-    }
-
-    @Override
-    public String getAssetPath() {
-        return Emulator.getConfig().getValue("gamecenter.fastfood.assets");
-    }
-
-    @Override
-    public Boolean getStatus() {
-        return Emulator.getConfig().getBoolean("gamecenter.fastfood.enabled");
-    }
-
-    @Override
-    public int getGamesLeftCount(Habbo habbo) {
-        return 3;
     }
 
     @Override
@@ -106,5 +75,35 @@ public class FastFoodGame extends Game {
         catch(Exception ex) {
             LOGGER.error("FastFood", ex.toString());
         }
+    }
+
+    @Override
+    public String getCode() {
+        return "basejump";
+    }
+
+    @Override
+    public String getBackgroundColor() {
+        return Emulator.getConfig().getValue("gamecenter.fastfood.background.color", "68bbd2");
+    }
+
+    @Override
+    public String getTextColor() {
+        return Emulator.getConfig().getValue("gamecenter.fastfood.text.color", "ffffff");
+    }
+
+    @Override
+    public String getAssets() {
+        return Emulator.getConfig().getValue("gamecenter.fastfood.assets");
+    }
+
+    @Override
+    public boolean getStatus() {
+        return Emulator.getConfig().getBoolean("gamecenter.fastfood.enabled", false);
+    }
+
+    @Override
+    public int getGamesLeft(Habbo habbo) {
+        return 3;
     }
 }
