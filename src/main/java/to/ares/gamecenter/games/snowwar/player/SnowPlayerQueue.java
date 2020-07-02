@@ -82,13 +82,17 @@ public class SnowPlayerQueue {
                     room.gameEvents.add(new PlayerLeftEvent(playerObject));
                 }
 
+                if (Emulator.getConfig().getInt("gamecenter.snowwar.room.id") != 0 && Emulator.getGameEnvironment().getRoomManager().getRoom(Emulator.getConfig().getInt("gamecenter.snowwar.room.id")) != null) {
+                    playerObject.snowWarPlayer.getPlayer().goToRoom(Emulator.getConfig().getInt("gamecenter.snowwar.room.id"));
+                }
+
                 return;
             }
-
-            room.broadcast(new UserLeftGameComposer(playerObject.userId));
             if (Emulator.getConfig().getInt("gamecenter.snowwar.room.id") != 0 && Emulator.getGameEnvironment().getRoomManager().getRoom(Emulator.getConfig().getInt("gamecenter.snowwar.room.id")) != null) {
                 playerObject.snowWarPlayer.getPlayer().goToRoom(Emulator.getConfig().getInt("gamecenter.snowwar.room.id"));
             }
+
+            room.broadcast(new UserLeftGameComposer(playerObject.userId));
         } else {
             queue.broadcast(new UserLeftGameComposer(playerObject.userId));
             queue.players.remove(playerObject.userId);
