@@ -7,7 +7,7 @@ import to.ares.gamecenter.messages.outgoing.snowwar.StageStillLoadingComposer;
 
 import java.util.Collection;
 
-public class SnowStageLoading {
+public class SnowStageLoadingTask {
 	public static void exec(SnowWarRoom room) {
 		final Collection<HumanObject> playersLoaded = room.getStageLoadedPlayers();
 

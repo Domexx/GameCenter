@@ -7,7 +7,7 @@ import to.ares.gamecenter.messages.outgoing.snowwar.StageStartingComposer;
 
 import java.util.ArrayList;
 
-public class SnowStageStarting {
+public class SnowStageStartingTask {
 	public static void exec(SnowWarRoom room) {
 		room.gameObjects.clear();
 

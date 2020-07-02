@@ -14,7 +14,7 @@ import io.netty.channel.Channel;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SnowArenaRun {
+public class SnowArenaRunTask {
     public static void exec(SnowWarRoom room) {
         if (room.players.isEmpty()) {
             room.status = SnowWar.CLOSE;

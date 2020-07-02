@@ -2,12 +2,11 @@ package to.ares.gamecenter.games.snowwar.player;
 
 import com.eu.habbo.Emulator;
 import to.ares.gamecenter.games.snowwar.room.RoomQueue;
-import to.ares.gamecenter.games.snowwar.SnowWar;
 import to.ares.gamecenter.games.snowwar.room.SnowWarRoom;
 import to.ares.gamecenter.games.snowwar.events.PlayerLeftEvent;
 import to.ares.gamecenter.messages.outgoing.snowwar.*;
 import to.ares.gamecenter.games.snowwar.objects.HumanObject;
-import to.ares.gamecenter.games.snowwar.thread.SnowWarTask;
+import to.ares.gamecenter.games.snowwar.thread.SnowWar;
 import com.eu.habbo.habbohotel.gameclients.GameClient;
 import com.eu.habbo.habbohotel.users.HabboInfo;
 
@@ -29,7 +28,7 @@ public class SnowPlayerQueue {
             roomQueue.put(pickRoom.room.roomId, pickRoom);
         } else {
             for (final RoomQueue room : roomQueue.values()) {
-                if (room.players.size() < SnowWar.MAXPLAYERS) {
+                if (room.players.size() < to.ares.gamecenter.games.snowwar.SnowWar.MAXPLAYERS) {
                     pickRoom = room;
                     break;
                 }
@@ -45,9 +44,9 @@ public class SnowPlayerQueue {
             pickRoom.room.owner = playerData.getUsername();
         }
 
-        SnowWar.PLAYERS.get(cn.getHabbo().getHabboInfo().getId()).setHumanObject(new HumanObject(pickRoom.room, 0));
-        SnowWar.PLAYERS.get(cn.getHabbo().getHabboInfo().getId()).getHumanObject().status = SnowWar.INLOBBY;
-        SnowWar.PLAYERS.get(cn.getHabbo().getHabboInfo().getId()).setRoom(pickRoom.room);
+        to.ares.gamecenter.games.snowwar.SnowWar.PLAYERS.get(cn.getHabbo().getHabboInfo().getId()).setHumanObject(new HumanObject(pickRoom.room, 0));
+        to.ares.gamecenter.games.snowwar.SnowWar.PLAYERS.get(cn.getHabbo().getHabboInfo().getId()).getHumanObject().status = to.ares.gamecenter.games.snowwar.SnowWar.INLOBBY;
+        to.ares.gamecenter.games.snowwar.SnowWar.PLAYERS.get(cn.getHabbo().getHabboInfo().getId()).setRoom(pickRoom.room);
 
         pickRoom.broadcast(new UserJoinedGameComposer(cn));
 
@@ -59,7 +58,7 @@ public class SnowPlayerQueue {
             cn.sendResponse(new GameLongDataComposer(pickRoom));
         }
 
-        if (pickRoom.room.timeToStart < 20 && pickRoom.room.status == SnowWar.TIMER_TOLOBBY) {
+        if (pickRoom.room.timeToStart < 20 && pickRoom.room.status == to.ares.gamecenter.games.snowwar.SnowWar.TIMER_TOLOBBY) {
             cn.sendResponse(new StartCounterComposer(pickRoom.room.timeToStart));
         }
 
@@ -77,7 +76,7 @@ public class SnowPlayerQueue {
             room.players.remove(playerObject.userId);
             room.TeamPlayers.get(playerObject.team).remove(playerObject.userId);
 
-            if (room.status == SnowWar.ARENA) {
+            if (room.status == to.ares.gamecenter.games.snowwar.SnowWar.ARENA) {
                 synchronized (room.gameEvents) {
                     room.gameEvents.add(new PlayerLeftEvent(playerObject));
                 }
@@ -109,10 +108,10 @@ public class SnowPlayerQueue {
         int pickTeam = 0;
 
         for (final GameClient cn : queue.players.values()) {
-            room.players.put(cn.getHabbo().getHabboInfo().getId(), SnowWar.PLAYERS.get(cn.getHabbo().getHabboInfo().getId()).getHumanObject());
-            int team = 1 + (++pickTeam % SnowWar.TEAMS.length);
-            SnowWar.PLAYERS.get(cn.getHabbo().getHabboInfo().getId()).getHumanObject().team = team;
-            room.TeamPlayers.get(team).put(cn.getHabbo().getHabboInfo().getId(), SnowWar.PLAYERS.get(cn.getHabbo().getHabboInfo().getId()).getHumanObject());
+            room.players.put(cn.getHabbo().getHabboInfo().getId(), to.ares.gamecenter.games.snowwar.SnowWar.PLAYERS.get(cn.getHabbo().getHabboInfo().getId()).getHumanObject());
+            int team = 1 + (++pickTeam % to.ares.gamecenter.games.snowwar.SnowWar.TEAMS.length);
+            to.ares.gamecenter.games.snowwar.SnowWar.PLAYERS.get(cn.getHabbo().getHabboInfo().getId()).getHumanObject().team = team;
+            room.TeamPlayers.get(team).put(cn.getHabbo().getHabboInfo().getId(), to.ares.gamecenter.games.snowwar.SnowWar.PLAYERS.get(cn.getHabbo().getHabboInfo().getId()).getHumanObject());
         }
 
         queue.broadcast(new GameStartedComposer(queue));
@@ -121,7 +120,7 @@ public class SnowPlayerQueue {
         room.broadcast(new EnterArenaComposer(room));
 
         for (final HumanObject player : room.players.values()) {
-            player.status = SnowWar.INARENA;
+            player.status = to.ares.gamecenter.games.snowwar.SnowWar.INARENA;
             if (player.cn.getHabbo().getHabboInfo().getCurrentRoom() != null) {
                 Emulator.getGameEnvironment().getRoomManager().leaveRoom(player.cn.getHabbo(), player.cn.getHabbo().getHabboInfo().getCurrentRoom());
             }
@@ -136,15 +135,15 @@ public class SnowPlayerQueue {
     private static void startLoading(RoomQueue queue) {
         final SnowWarRoom room = queue.room;
 
-        if (room.status == SnowWar.TIMER_TOLOBBY) {
+        if (room.status == to.ares.gamecenter.games.snowwar.SnowWar.TIMER_TOLOBBY) {
             return;
         }
 
         room.timeToStart = Emulator.getConfig().getInt("gamecenter.snowwar.game.start.time");
-        room.status = SnowWar.TIMER_TOLOBBY;
+        room.status = to.ares.gamecenter.games.snowwar.SnowWar.TIMER_TOLOBBY;
 
         queue.broadcast(new StartCounterComposer(room.timeToStart));
 
-        SnowWarTask.addTask(new SnowWarTask(room, queue), 0, 1000);
+        SnowWar.addTask(new SnowWar(room, queue), 0, 1000);
     }
 }

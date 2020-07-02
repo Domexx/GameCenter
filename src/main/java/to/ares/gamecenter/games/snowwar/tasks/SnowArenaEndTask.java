@@ -5,7 +5,7 @@ import to.ares.gamecenter.games.snowwar.room.SnowWarRoom;
 import to.ares.gamecenter.games.snowwar.objects.HumanObject;
 import to.ares.gamecenter.messages.outgoing.snowwar.GameEndingComposer;
 
-public class SnowArenaEnd {
+public class SnowArenaEndTask {
     public static void exec(SnowWarRoom room) {
         int blueScore = 0;
         int redScore = 0;
