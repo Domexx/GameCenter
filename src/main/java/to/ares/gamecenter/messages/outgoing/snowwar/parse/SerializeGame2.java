@@ -1,7 +1,7 @@
 package to.ares.gamecenter.messages.outgoing.snowwar.parse;
 
 
-import to.ares.gamecenter.games.snowwar.RoomQueue;
+import to.ares.gamecenter.games.snowwar.room.RoomQueue;
 import to.ares.gamecenter.games.snowwar.SnowWar;
 import com.eu.habbo.habbohotel.gameclients.GameClient;
 import com.eu.habbo.messages.ServerMessage;

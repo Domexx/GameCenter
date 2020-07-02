@@ -5,7 +5,7 @@ package to.ares.gamecenter.messages.incoming.snowwar;
  * ****************
  */
 import to.ares.gamecenter.games.snowwar.SnowWar;
-import to.ares.gamecenter.games.snowwar.SnowWarRoom;
+import to.ares.gamecenter.games.snowwar.room.SnowWarRoom;
 import com.eu.habbo.messages.incoming.MessageHandler;
 
 public class RequestFullStatusUpdateParser extends MessageHandler

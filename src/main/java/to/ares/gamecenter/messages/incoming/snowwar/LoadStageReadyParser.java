@@ -5,8 +5,8 @@ package to.ares.gamecenter.messages.incoming.snowwar;
  * ****************
  */
 import to.ares.gamecenter.games.snowwar.SnowWar;
-import to.ares.gamecenter.games.snowwar.SnowWarPlayer;
-import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
+import to.ares.gamecenter.games.snowwar.player.SnowWarPlayer;
+import to.ares.gamecenter.games.snowwar.objects.HumanObject;
 import com.eu.habbo.messages.incoming.MessageHandler;
 
 public class LoadStageReadyParser extends MessageHandler
@@ -19,7 +19,7 @@ public class LoadStageReadyParser extends MessageHandler
 			return;
 		}
 
-		final HumanGameObject humanObject = snowPlayer.getHumanObject();
+		final HumanObject humanObject = snowPlayer.getHumanObject();
 		if(humanObject == null) {
 			return;
 		}

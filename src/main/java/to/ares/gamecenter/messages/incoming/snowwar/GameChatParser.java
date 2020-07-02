@@ -5,8 +5,8 @@ package to.ares.gamecenter.messages.incoming.snowwar;
  * ****************
  */
 import to.ares.gamecenter.games.snowwar.SnowWar;
-import to.ares.gamecenter.games.snowwar.SnowWarRoom;
-import to.ares.gamecenter.games.snowwar.SnowWarPlayer;
+import to.ares.gamecenter.games.snowwar.room.SnowWarRoom;
+import to.ares.gamecenter.games.snowwar.player.SnowWarPlayer;
 import com.eu.habbo.messages.incoming.MessageHandler;
 import to.ares.gamecenter.messages.outgoing.snowwar.GameChatFromPlayerComposer;
 

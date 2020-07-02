@@ -22,7 +22,7 @@ import to.ares.gamecenter.games.snowwar.SnowWarGame;
 import to.ares.gamecenter.messages.incoming.snowwar.*;
 import to.ares.gamecenter.messages.outgoing.gamecenter.GameCenterGameListComposer;
 import to.ares.gamecenter.games.snowwar.SnowWar;
-import to.ares.gamecenter.games.snowwar.SnowWarPlayer;
+import to.ares.gamecenter.games.snowwar.player.SnowWarPlayer;
 import to.ares.gamecenter.games.snowwar.thread.SnowWarWorkerTasks;
 import gnu.trove.map.hash.THashMap;
 

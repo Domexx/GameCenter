@@ -1,15 +1,15 @@
 package to.ares.gamecenter.games.snowwar.events;
 
-import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
+import to.ares.gamecenter.games.snowwar.objects.HumanObject;
 
 public class BallThrowToPositionEvent extends BaseEvent {
-	public HumanGameObject attacker;
+	public HumanObject attacker;
 
 	public int x;
 	public int y;
 	public int type;
 
-	public BallThrowToPositionEvent(final HumanGameObject attacker, final int x, final int y, final int type) {
+	public BallThrowToPositionEvent(final HumanObject attacker, final int x, final int y, final int type) {
 		eventType = BALLTHROWPOSITION;
 		this.attacker = attacker;
 		this.x = x;
@@ -18,7 +18,7 @@ public class BallThrowToPositionEvent extends BaseEvent {
 	}
 
 	@Override
-	public void apply() {
+	public void onApply() {
 		attacker._vs(x, y);
 		attacker._w1();
 	}

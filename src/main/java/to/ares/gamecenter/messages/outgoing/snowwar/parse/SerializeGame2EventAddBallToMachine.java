@@ -1,7 +1,7 @@
 package to.ares.gamecenter.messages.outgoing.snowwar.parse;
 
-import to.ares.gamecenter.games.snowwar.Composer;
-import to.ares.gamecenter.games.snowwar.MessageWriter;
+import to.ares.gamecenter.messages.outgoing.snowwar.Composer;
+import to.ares.gamecenter.messages.outgoing.snowwar.MessageWriter;
 import to.ares.gamecenter.games.snowwar.events.AddBallEvent;
 import com.eu.habbo.messages.ServerMessage;
 

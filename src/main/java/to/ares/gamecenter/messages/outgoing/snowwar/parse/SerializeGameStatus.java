@@ -1,9 +1,9 @@
 package to.ares.gamecenter.messages.outgoing.snowwar.parse;
 
 import com.eu.habbo.Emulator;
-import to.ares.gamecenter.games.snowwar.Composer;
-import to.ares.gamecenter.games.snowwar.MessageWriter;
-import to.ares.gamecenter.games.snowwar.SnowWarRoom;
+import to.ares.gamecenter.messages.outgoing.snowwar.Composer;
+import to.ares.gamecenter.messages.outgoing.snowwar.MessageWriter;
+import to.ares.gamecenter.games.snowwar.room.SnowWarRoom;
 import com.eu.habbo.messages.ServerMessage;
 import to.ares.gamecenter.games.snowwar.events.*;
 
@@ -49,7 +49,7 @@ public class SerializeGameStatus {
                 }
 
                 if (!isFull) {
-                    evt.apply();
+                    evt.onApply();
                 }
             }
         }
@@ -96,7 +96,7 @@ public class SerializeGameStatus {
                 }
 
                 if(!isFull) {
-                    evt.apply();
+                    evt.onApply();
                 }
 
                 i++;

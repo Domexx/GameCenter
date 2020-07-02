@@ -1,8 +1,8 @@
 package to.ares.gamecenter.games.snowwar.tasks;
 
 import to.ares.gamecenter.games.snowwar.SnowWar;
-import to.ares.gamecenter.games.snowwar.SnowWarRoom;
-import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
+import to.ares.gamecenter.games.snowwar.room.SnowWarRoom;
+import to.ares.gamecenter.games.snowwar.objects.HumanObject;
 import to.ares.gamecenter.messages.outgoing.snowwar.GameEndingComposer;
 
 public class SnowArenaEnd {
@@ -29,7 +29,7 @@ public class SnowArenaEnd {
             room.result = 2;
         }
 
-        for (final HumanGameObject player : room.players.values()) {
+        for (final HumanObject player : room.players.values()) {
             if (room.mostHits == null) {
                 room.mostHits = player;
             }

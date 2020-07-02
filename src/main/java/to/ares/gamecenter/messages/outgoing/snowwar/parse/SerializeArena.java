@@ -1,8 +1,8 @@
 package to.ares.gamecenter.messages.outgoing.snowwar.parse;
 
 
-import to.ares.gamecenter.games.snowwar.data.GameFuseObject;
-import to.ares.gamecenter.games.snowwar.SnowWarRoom;
+import to.ares.gamecenter.games.snowwar.room.items.AdsBackgroundObjectItem;
+import to.ares.gamecenter.games.snowwar.room.SnowWarRoom;
 import com.eu.habbo.messages.ServerMessage;
 
 /**
@@ -14,7 +14,7 @@ public class SerializeArena {
         msg.appendInt(arena.arenaType.arenaHeight);
         msg.appendString(arena.arenaType.heightMap);
         msg.appendInt(arena.arenaType.fuseObjects.size());
-        for (final GameFuseObject fuseItem : arena.arenaType.fuseObjects) {
+        for (final AdsBackgroundObjectItem fuseItem : arena.arenaType.fuseObjects) {
             SerializeFuseObject.parse(msg, fuseItem);
         }
     }

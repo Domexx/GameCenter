@@ -1,11 +1,11 @@
 package to.ares.gamecenter.games.snowwar.tasks;
 
-import to.ares.gamecenter.games.snowwar.MessageWriter;
+import to.ares.gamecenter.messages.outgoing.snowwar.MessageWriter;
 import to.ares.gamecenter.games.snowwar.SnowWar;
-import to.ares.gamecenter.games.snowwar.SnowWarRoom;
+import to.ares.gamecenter.games.snowwar.room.SnowWarRoom;
 import to.ares.gamecenter.games.snowwar.events.BaseEvent;
-import to.ares.gamecenter.games.snowwar.objects.GameItemObject;
-import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
+import to.ares.gamecenter.games.snowwar.objects.BaseObject;
+import to.ares.gamecenter.games.snowwar.objects.HumanObject;
 import to.ares.gamecenter.messages.outgoing.snowwar.FullGameStatusComposer;
 import to.ares.gamecenter.messages.outgoing.snowwar.GameStatusComposer;
 import to.ares.gamecenter.messages.outgoing.snowwar.StageEndingComposer;
@@ -34,7 +34,7 @@ public class SnowArenaRun {
             // temporally fix for checksum bug..
             //if (filter.isEmpty()) {
             room.checksum = 0;
-            for (final GameItemObject Object : room.gameObjects.values()) {
+            for (final BaseObject Object : room.gameObjects.values()) {
                 Object.GenerateCHECKSUM(room, 1);
             }
             //}
@@ -48,7 +48,7 @@ public class SnowArenaRun {
             room.gameEvents.clear();
         }
 
-        for (final HumanGameObject player : room.players.values()) {
+        for (final HumanObject player : room.players.values()) {
             if (player.currentSnowWar != null) {
                 if (!filter.isEmpty()) {
                     if (filter.contains(player.cn.getChannel())) {

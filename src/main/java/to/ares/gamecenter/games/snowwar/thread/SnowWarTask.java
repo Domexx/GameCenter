@@ -1,9 +1,9 @@
 package to.ares.gamecenter.games.snowwar.thread;
 
-import to.ares.gamecenter.games.snowwar.RoomQueue;
-import to.ares.gamecenter.games.snowwar.SnowPlayerQueue;
+import to.ares.gamecenter.games.snowwar.room.RoomQueue;
+import to.ares.gamecenter.games.snowwar.player.SnowPlayerQueue;
 import to.ares.gamecenter.games.snowwar.SnowWar;
-import to.ares.gamecenter.games.snowwar.SnowWarRoom;
+import to.ares.gamecenter.games.snowwar.room.SnowWarRoom;
 import to.ares.gamecenter.games.snowwar.tasks.*;
 
 import java.util.concurrent.ScheduledFuture;

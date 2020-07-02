@@ -1,17 +1,17 @@
 package to.ares.gamecenter.games.snowwar.events;
 
-import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
+import to.ares.gamecenter.games.snowwar.objects.HumanObject;
 
 public class PlayerLeftEvent extends BaseEvent {
-	public HumanGameObject player;
+	public HumanObject player;
 
-	public PlayerLeftEvent(final HumanGameObject player) {
+	public PlayerLeftEvent(final HumanObject player) {
 		eventType = PLAYERLEFT;
 		this.player = player;
 	}
 
 	@Override
-	public void apply() {
+	public void onApply() {
 		player.currentSnowWar.queueDeleteObject(player);
 		player.cleanTiles();
 	}

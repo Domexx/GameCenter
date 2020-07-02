@@ -1,8 +1,8 @@
 package to.ares.gamecenter.games.snowwar.tasks;
 
-import to.ares.gamecenter.games.snowwar.SnowWarRoom;
-import to.ares.gamecenter.games.snowwar.objects.GameItemObject;
-import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
+import to.ares.gamecenter.games.snowwar.room.SnowWarRoom;
+import to.ares.gamecenter.games.snowwar.objects.BaseObject;
+import to.ares.gamecenter.games.snowwar.objects.HumanObject;
 import to.ares.gamecenter.messages.outgoing.snowwar.StageStartingComposer;
 
 import java.util.ArrayList;
@@ -13,19 +13,19 @@ public class SnowStageStarting {
 
 		room.arenaType.gameObjects(room.gameObjects, room);
 
-		for (final GameItemObject obj : room.gameObjects.values()) {
+		for (final BaseObject obj : room.gameObjects.values()) {
 			// TODO: use "addGameObject" in ArenaType.gameObjects and set objectId
 			obj._active = true;
 			obj.objectId = room.objectIdCounter++;
 			//room.addGameObject(obj);
 		}
 
-		for (final HumanGameObject player : room.players.values()) {
+		for (final HumanObject player : room.players.values()) {
 			room.addGameObject(player);
 		}
 
 		room.checksum = 0;
-		for (final GameItemObject Object : room.gameObjects.values()) {
+		for (final BaseObject Object : room.gameObjects.values()) {
 			Object.GenerateCHECKSUM(room, 1);
 		}
 

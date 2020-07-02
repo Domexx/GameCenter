@@ -4,16 +4,16 @@ package to.ares.gamecenter.messages.outgoing.snowwar;
  * @author capos *
  * ****************
  */
-import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
+import to.ares.gamecenter.games.snowwar.objects.HumanObject;
 import com.eu.habbo.messages.ServerMessage;
 import com.eu.habbo.messages.outgoing.MessageComposer;
 import to.ares.gamecenter.messages.outgoing.snowwar.parse.SerializeGame2PlayerData;
 
 public class ArenaEnteredComposer extends MessageComposer {
 
-	private final HumanGameObject player;
+	private final HumanObject player;
 
-	public ArenaEnteredComposer(final HumanGameObject player) {
+	public ArenaEnteredComposer(final HumanObject player) {
 		this.player = player;
 	}
 

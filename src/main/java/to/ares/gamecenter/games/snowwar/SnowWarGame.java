@@ -3,6 +3,7 @@ package to.ares.gamecenter.games.snowwar;
 import com.eu.habbo.Emulator;
 import com.eu.habbo.habbohotel.users.Habbo;
 import to.ares.gamecenter.games.Game;
+import to.ares.gamecenter.games.snowwar.player.SnowPlayerQueue;
 
 public class SnowWarGame extends Game {
     public SnowWarGame(int gameId) {

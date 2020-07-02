@@ -1,9 +1,10 @@
 package to.ares.gamecenter.games.snowwar;
 
-import to.ares.gamecenter.games.snowwar.arenas.ArcticIslandArena;
-import to.ares.gamecenter.games.snowwar.arenas.BaseArena;
-import to.ares.gamecenter.games.snowwar.arenas.DragonCaveArena;
-import to.ares.gamecenter.games.snowwar.arenas.FightNightArena;
+import to.ares.gamecenter.games.snowwar.room.arenas.ArcticIslandArena;
+import to.ares.gamecenter.games.snowwar.room.arenas.BaseArena;
+import to.ares.gamecenter.games.snowwar.room.arenas.DragonCaveArena;
+import to.ares.gamecenter.games.snowwar.room.arenas.FightNightArena;
+import to.ares.gamecenter.games.snowwar.player.SnowWarPlayer;
 
 import java.util.HashMap;
 

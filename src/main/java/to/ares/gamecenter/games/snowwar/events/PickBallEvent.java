@@ -1,20 +1,20 @@
 package to.ares.gamecenter.games.snowwar.events;
 
-import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
-import to.ares.gamecenter.games.snowwar.objects.PickBallsGameItemObject;
+import to.ares.gamecenter.games.snowwar.objects.HumanObject;
+import to.ares.gamecenter.games.snowwar.objects.PickBallsItemObject;
 
 public class PickBallEvent extends BaseEvent {
-	public HumanGameObject player;
-	public PickBallsGameItemObject gameItem;
+	public HumanObject player;
+	public PickBallsItemObject gameItem;
 
-	public PickBallEvent(final HumanGameObject player, final PickBallsGameItemObject gameItem) {
+	public PickBallEvent(final HumanObject player, final PickBallsItemObject gameItem) {
 		eventType = PICKBALLFROMGAMEITEM;
 		this.player = player;
 		this.gameItem = gameItem;
 	}
 
 	@Override
-	public void apply() {
+	public void onApply() {
 		int local2;
 		final int local1 = player.availableSnowBallSlots();
         if (local1 > 0){

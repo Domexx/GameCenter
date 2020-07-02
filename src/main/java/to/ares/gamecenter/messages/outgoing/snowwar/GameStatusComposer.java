@@ -1,8 +1,6 @@
 package to.ares.gamecenter.messages.outgoing.snowwar;
 
-import to.ares.gamecenter.games.snowwar.Composer;
-import to.ares.gamecenter.games.snowwar.MessageWriter;
-import to.ares.gamecenter.games.snowwar.SnowWarRoom;
+import to.ares.gamecenter.games.snowwar.room.SnowWarRoom;
 import com.eu.habbo.messages.ServerMessage;
 import com.eu.habbo.messages.outgoing.MessageComposer;
 import to.ares.gamecenter.messages.outgoing.snowwar.parse.SerializeGameStatus;

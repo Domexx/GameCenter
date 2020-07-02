@@ -11,5 +11,5 @@ public abstract class BaseEvent {
 	public final static int PICKBALLFROMGAMEITEM = 12;
 
 	public int eventType;
-	public abstract void apply();
+	public abstract void onApply();
 }
