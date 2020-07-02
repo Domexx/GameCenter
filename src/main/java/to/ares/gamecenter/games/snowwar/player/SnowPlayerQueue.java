@@ -6,7 +6,7 @@ import to.ares.gamecenter.games.snowwar.room.SnowWarRoom;
 import to.ares.gamecenter.games.snowwar.events.PlayerLeftEvent;
 import to.ares.gamecenter.messages.outgoing.snowwar.*;
 import to.ares.gamecenter.games.snowwar.objects.HumanObject;
-import to.ares.gamecenter.games.snowwar.thread.SnowWar;
+import to.ares.gamecenter.games.snowwar.thread.SnowWarThread;
 import com.eu.habbo.habbohotel.gameclients.GameClient;
 import com.eu.habbo.habbohotel.users.HabboInfo;
 
@@ -148,6 +148,6 @@ public class SnowPlayerQueue {
 
         queue.broadcast(new StartCounterComposer(room.timeToStart));
 
-        SnowWar.addTask(new SnowWar(room, queue), 0, 1000);
+        SnowWarThread.addTask(new SnowWarThread(room, queue), 0, 1000);
     }
 }

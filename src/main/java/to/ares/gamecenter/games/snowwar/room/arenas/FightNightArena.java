@@ -2,7 +2,7 @@ package to.ares.gamecenter.games.snowwar.room.arenas;
 
 import com.eu.habbo.Emulator;
 import to.ares.gamecenter.games.snowwar.room.items.*;
-import to.ares.gamecenter.games.snowwar.room.items.AdsBackgroundObjectItem;
+import to.ares.gamecenter.games.snowwar.room.items.GameItem;
 import to.ares.gamecenter.games.snowwar.room.SnowWarRoom;
 import to.ares.gamecenter.games.snowwar.data.MapData;
 import to.ares.gamecenter.games.snowwar.objects.BaseObject;
@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class FightNightArena extends BaseArena {
 	public FightNightArena() {
-		AdsBackgroundObjectItem item;
+		GameItem item;
 
 		arenaType = 11;
 		arenaWidth = 50;
@@ -71,7 +71,7 @@ public class FightNightArena extends BaseArena {
 				"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\r" +
 				"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\r";
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -83,7 +83,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -95,7 +95,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -107,7 +107,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -119,7 +119,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
@@ -131,7 +131,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -143,7 +143,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("1");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -155,7 +155,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -167,7 +167,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
@@ -179,7 +179,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -191,7 +191,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("1");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -203,7 +203,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("2");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -215,7 +215,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("2");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -227,7 +227,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
@@ -239,7 +239,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -251,7 +251,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("2");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -263,7 +263,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -275,7 +275,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -287,7 +287,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("1");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -299,7 +299,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
@@ -311,7 +311,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -323,7 +323,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -335,7 +335,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -347,7 +347,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
@@ -359,7 +359,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
@@ -371,7 +371,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new XmasManAItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
@@ -383,7 +383,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -395,7 +395,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("1");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -407,7 +407,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
@@ -419,7 +419,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -431,7 +431,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("2");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -443,7 +443,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -455,7 +455,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -467,7 +467,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("1");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -479,7 +479,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
@@ -491,7 +491,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -503,7 +503,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 2
+		item = new GameItem();// 2
 		item.baseItem = new SnowFenceItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
@@ -515,7 +515,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -527,7 +527,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("1");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 2
+		item = new GameItem();// 2
 		item.baseItem = new SnowFenceItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
@@ -539,7 +539,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("1");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -551,7 +551,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("1");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
@@ -563,7 +563,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -575,7 +575,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -587,7 +587,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -599,7 +599,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -611,7 +611,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("1");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new XmasManCItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
@@ -623,7 +623,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("6");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new AdsBackgroundItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
@@ -636,7 +636,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData = new MapData("state=0\toffsetX=-1119\toffsetZ=9950\toffsetY=390\timageUrl=" + Emulator.getConfig().getValue("gamecenter.snowwar.fightnight.bg"));
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -648,7 +648,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -660,7 +660,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -672,7 +672,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 2
+		item = new GameItem();// 2
 		item.baseItem = new SnowFenceItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
@@ -684,7 +684,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("1");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -696,7 +696,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
@@ -708,7 +708,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -720,7 +720,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -732,7 +732,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -744,7 +744,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -756,7 +756,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
@@ -768,7 +768,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -780,7 +780,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -792,7 +792,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
@@ -804,7 +804,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -816,7 +816,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -828,7 +828,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 2
+		item = new GameItem();// 2
 		item.baseItem = new SnowFenceItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
@@ -840,7 +840,7 @@ public class FightNightArena extends BaseArena {
 		item.extraData.setExtraData("1");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new XmasManBItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;

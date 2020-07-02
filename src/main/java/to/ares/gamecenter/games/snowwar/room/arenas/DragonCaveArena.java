@@ -4,7 +4,7 @@ import com.eu.habbo.Emulator;
 import to.ares.gamecenter.games.snowwar.room.items.AdsBackgroundItem;
 import to.ares.gamecenter.games.snowwar.room.items.SnowBallPileItem;
 import to.ares.gamecenter.games.snowwar.room.items.SnowIceBlockItem;
-import to.ares.gamecenter.games.snowwar.room.items.AdsBackgroundObjectItem;
+import to.ares.gamecenter.games.snowwar.room.items.GameItem;
 import to.ares.gamecenter.games.snowwar.room.SnowWarRoom;
 import to.ares.gamecenter.games.snowwar.data.MapData;
 import to.ares.gamecenter.games.snowwar.objects.BaseObject;
@@ -15,7 +15,7 @@ import java.util.Map;
 
 public class DragonCaveArena extends BaseArena {
 	public DragonCaveArena() {
-		AdsBackgroundObjectItem item;
+		GameItem item;
 
 		arenaType = 9;
 		arenaHeight = 50;
@@ -72,7 +72,7 @@ public class DragonCaveArena extends BaseArena {
 				"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\r" +
 				"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\r";
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
@@ -84,7 +84,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
@@ -96,7 +96,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
@@ -108,7 +108,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
@@ -120,7 +120,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
@@ -132,7 +132,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
@@ -144,7 +144,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
@@ -156,7 +156,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
@@ -168,7 +168,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
@@ -180,7 +180,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
@@ -192,7 +192,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
@@ -204,7 +204,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
@@ -216,7 +216,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
@@ -228,7 +228,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
@@ -240,7 +240,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
@@ -252,7 +252,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
@@ -264,7 +264,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
@@ -276,7 +276,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
@@ -288,7 +288,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
@@ -300,7 +300,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
@@ -312,7 +312,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
@@ -324,7 +324,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
@@ -336,7 +336,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
@@ -348,7 +348,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
@@ -360,7 +360,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
@@ -372,7 +372,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
@@ -384,7 +384,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
@@ -396,7 +396,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
@@ -408,7 +408,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
@@ -420,7 +420,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
@@ -432,7 +432,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
@@ -444,7 +444,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
@@ -456,7 +456,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowIceBlockItem();
 		item.baseItem.allowWalk= false;
 		item.baseItem.height = 1.0f;
@@ -468,7 +468,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
@@ -480,7 +480,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
@@ -492,7 +492,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
@@ -504,7 +504,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new AdsBackgroundItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
@@ -517,7 +517,7 @@ public class DragonCaveArena extends BaseArena {
 		item.extraData = new MapData("state=0\toffsetX=-1070\toffsetZ=9920\toffsetY=1520\timageUrl=" + Emulator.getConfig().getValue("gamecenter.snowwar.dragoncave.bg"));
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallPileItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;

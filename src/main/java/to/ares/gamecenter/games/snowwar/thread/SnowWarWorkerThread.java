@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-public class SnowWarWorker {
+public class SnowWarWorkerThread {
     private static final Logger LOGGER = LoggerFactory.getLogger(Emulator.class);
 
     public static int serverType;
@@ -26,7 +26,7 @@ public class SnowWarWorker {
         LOGGER.info("[GameCenter] SnowWar Tasks started");
     }
 
-    public static void addTask(final SnowWar task, final int initDelay, final int repeatRate, final ScheduledThreadPoolExecutor worker) {
+    public static void addTask(final SnowWarThread task, final int initDelay, final int repeatRate, final ScheduledThreadPoolExecutor worker) {
         if (repeatRate > 0) {
             task.future = worker.scheduleAtFixedRate(task, initDelay, repeatRate, TimeUnit.MILLISECONDS);
         } else {

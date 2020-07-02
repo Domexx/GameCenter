@@ -2,7 +2,7 @@ package to.ares.gamecenter.games.snowwar.room.arenas;
 
 import com.eu.habbo.Emulator;
 import to.ares.gamecenter.games.snowwar.room.items.*;
-import to.ares.gamecenter.games.snowwar.room.items.AdsBackgroundObjectItem;
+import to.ares.gamecenter.games.snowwar.room.items.GameItem;
 import to.ares.gamecenter.games.snowwar.room.SnowWarRoom;
 import to.ares.gamecenter.games.snowwar.data.MapData;
 import to.ares.gamecenter.games.snowwar.objects.BaseObject;
@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class ArcticIslandArena extends BaseArena {
 	public ArcticIslandArena() {
-		AdsBackgroundObjectItem item;
+		GameItem item;
 
 		arenaType = 8;
 		arenaHeight = 50;
@@ -71,7 +71,7 @@ public class ArcticIslandArena extends BaseArena {
 				"xxxxxxxxxxxxxxxxxxxxxxxxxx0000000xxxxxxxxxxxxxxxxx\r" +
 				"xxxxxxxxxxxxxxxxxxxxxxxxxxx00000xxxxxxxxxxxxxxxxxx\r";
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -83,7 +83,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -95,7 +95,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -107,7 +107,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeAltItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -119,7 +119,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -131,7 +131,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeAltItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -143,7 +143,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -155,7 +155,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -167,7 +167,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -179,7 +179,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeAltItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -191,7 +191,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -203,7 +203,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -215,7 +215,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -227,7 +227,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 2
+		item = new GameItem();// 2
 		item.baseItem = new SnowFenceItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
@@ -239,7 +239,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("2");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -251,7 +251,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeAltItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -263,7 +263,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -275,7 +275,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -287,7 +287,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -299,7 +299,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -311,7 +311,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -323,7 +323,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 2
+		item = new GameItem();// 2
 		item.baseItem = new SnowFenceItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
@@ -335,7 +335,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeAltItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -347,7 +347,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -359,7 +359,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeAltItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -371,7 +371,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -383,7 +383,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -395,7 +395,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -407,7 +407,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeAltItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -419,7 +419,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -431,7 +431,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 2
+		item = new GameItem();// 2
 		item.baseItem = new SnowFenceItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
@@ -443,7 +443,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeAltItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -455,7 +455,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -467,7 +467,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -479,7 +479,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeAltItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -491,7 +491,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -503,7 +503,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -515,7 +515,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -527,7 +527,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -539,7 +539,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeAltItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -551,7 +551,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -563,7 +563,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 2
+		item = new GameItem();// 2
 		item.baseItem = new SnowFenceItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
@@ -575,7 +575,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("1");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeAltItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -587,7 +587,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -599,7 +599,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 2
+		item = new GameItem();// 2
 		item.baseItem = new SnowFenceItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
@@ -611,7 +611,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("1");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 2
+		item = new GameItem();// 2
 		item.baseItem = new SnowFenceItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
@@ -623,7 +623,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("2");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 2
+		item = new GameItem();// 2
 		item.baseItem = new SnowFenceItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
@@ -635,7 +635,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -647,7 +647,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeAltItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -659,7 +659,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -671,7 +671,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeAltItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -683,7 +683,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -695,7 +695,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -707,7 +707,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -719,7 +719,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -731,7 +731,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -743,7 +743,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeAltItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -755,7 +755,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -767,7 +767,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -779,7 +779,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -791,7 +791,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -803,7 +803,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 2
+		item = new GameItem();// 2
 		item.baseItem = new SnowFenceItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
@@ -815,7 +815,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("1");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -827,7 +827,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -839,7 +839,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -851,7 +851,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -863,7 +863,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -875,7 +875,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -887,7 +887,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -899,7 +899,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 2
+		item = new GameItem();// 2
 		item.baseItem = new SnowFenceItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
@@ -911,7 +911,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("2");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -923,7 +923,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -935,7 +935,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -947,7 +947,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeAltItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -959,7 +959,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -971,7 +971,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBallMachineItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
@@ -983,7 +983,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeAltItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -995,7 +995,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -1007,7 +1007,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 2
+		item = new GameItem();// 2
 		item.baseItem = new SnowFenceItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
@@ -1019,7 +1019,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new AdsBackgroundItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
@@ -1032,7 +1032,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData = new MapData("state=0\toffsetX=-1166\toffsetZ=10000\toffsetY=1542\timageUrl=" + Emulator.getConfig().getValue("gamecenter.snowwar.artic.bg"));
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeAltItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -1044,7 +1044,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -1056,7 +1056,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -1068,7 +1068,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -1080,7 +1080,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -1092,7 +1092,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -1104,7 +1104,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -1116,7 +1116,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -1128,7 +1128,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -1140,7 +1140,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -1152,7 +1152,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -1164,7 +1164,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -1176,7 +1176,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowTreeAltItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -1188,7 +1188,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("0");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -1200,7 +1200,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -1212,7 +1212,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 2
+		item = new GameItem();// 2
 		item.baseItem = new SnowFenceItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.0f;
@@ -1224,7 +1224,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("2");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -1236,7 +1236,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new SnowBlockItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 1.0f;
@@ -1249,7 +1249,7 @@ public class ArcticIslandArena extends BaseArena {
 		fuseObjects.add(item);
 
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new AdsRayGunItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.1f;
@@ -1261,7 +1261,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new AdsRayGunItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.1f;
@@ -1273,7 +1273,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new AdsRayGunItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.1f;
@@ -1285,7 +1285,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new AdsRayGunItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.1f;
@@ -1297,7 +1297,7 @@ public class ArcticIslandArena extends BaseArena {
 		item.extraData.setExtraData("");
 		fuseObjects.add(item);
 
-		item = new AdsBackgroundObjectItem();// 1
+		item = new GameItem();// 1
 		item.baseItem = new AdsRayGunItem();
 		item.baseItem.allowWalk = false;
 		item.baseItem.height = 0.1f;

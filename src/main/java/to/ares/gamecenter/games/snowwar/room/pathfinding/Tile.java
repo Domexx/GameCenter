@@ -1,6 +1,6 @@
 package to.ares.gamecenter.games.snowwar.room.pathfinding;
 
-import to.ares.gamecenter.games.snowwar.room.items.AdsBackgroundObjectItem;
+import to.ares.gamecenter.games.snowwar.room.items.GameItem;
 import to.ares.gamecenter.games.snowwar.objects.BaseObject;
 import to.ares.gamecenter.games.snowwar.objects.HumanObject;
 import to.ares.gamecenter.games.snowwar.objects.PickBallsItemObject;
@@ -24,13 +24,13 @@ public class Tile {
 
     public PickBallsItemObject pickBallsItem;
 
-    private final List<AdsBackgroundObjectItem> _0E8;
+    private final List<GameItem> _0E8;
 
     public Tile(int _arg1, int _arg2){
         _3ob = new Tile[8];
         _4gH = new int[]{_arg1, _arg2, 0};
         location = new PlayerTile((_arg1 * TILE_SIZE), (_arg2 * TILE_SIZE), 0);
-        _0E8 = new ArrayList<AdsBackgroundObjectItem>();
+        _0E8 = new ArrayList<GameItem>();
     }
 
     public static int _4mC(int _arg1){
@@ -49,12 +49,12 @@ public class Tile {
         return ((_arg1 * Tile.TILE_SIZE));
     }
 
-    public List<AdsBackgroundObjectItem> fuseObjects()
+    public List<GameItem> fuseObjects()
     {
         return (_0E8);
     }
 
-    public void _lR(AdsBackgroundObjectItem fuseItem)
+    public void _lR(GameItem fuseItem)
     {
         _0E8.add(fuseItem);
         _4AO((int) (fuseItem.baseItem.height * Tile.TILE_SIZE));

@@ -1,7 +1,7 @@
 package to.ares.gamecenter.games.snowwar.stages;
 
 import to.ares.gamecenter.games.snowwar.room.arenas.BaseArena;
-import to.ares.gamecenter.games.snowwar.room.items.AdsBackgroundObjectItem;
+import to.ares.gamecenter.games.snowwar.room.items.GameItem;
 import to.ares.gamecenter.games.snowwar.objects.BaseObject;
 import to.ares.gamecenter.games.snowwar.room.pathfinding.Direction8;
 import to.ares.gamecenter.games.snowwar.room.pathfinding.PlayerTile;
@@ -48,8 +48,8 @@ public class SnowWarStage {
         return (tileMap[y][x]);
     }
 
-    private void addObjects(List<AdsBackgroundObjectItem> objects) {
-        for (final AdsBackgroundObjectItem object : objects) {
+    private void addObjects(List<GameItem> objects) {
+        for (final GameItem object : objects) {
             final Tile tile = getTile(object.X, object.Y);
             if (tile != null) {
                 tile._lR(object);
@@ -58,7 +58,7 @@ public class SnowWarStage {
         }
     }
 
-    private void setupTile(AdsBackgroundObjectItem object) {
+    private void setupTile(GameItem object) {
         Tile local1;
         int local5;
         int local6;
