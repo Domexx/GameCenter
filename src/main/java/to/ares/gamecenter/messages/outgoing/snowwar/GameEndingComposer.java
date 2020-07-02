@@ -28,7 +28,7 @@ public class GameEndingComposer extends MessageComposer {
 		SerializeGame2GameResult.parse(this.response, arena);
 		this.response.appendInt(SnowWar.TEAMS.length);
 		for (final int teamId : SnowWar.TEAMS) {
-			SerializeGame2TeamScoreData.parse(this.response, teamId, arena.teamScore[teamId-1], arena.TeamPlayers.get(teamId).values());
+			SerializeGame2TeamScoreData.parse(this.response, teamId, arena.teamScore[teamId-1], arena.teamPlayers.get(teamId).values());
 		}
 		SerializeGame2SnowWarGameStats.parse(this.response, arena);
 

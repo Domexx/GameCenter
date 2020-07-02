@@ -7,9 +7,10 @@ import to.ares.gamecenter.games.snowwar.tasks.*;
 
 import java.util.concurrent.ScheduledFuture;
 
-public class SnowWar extends Game {
+public class SnowWar extends Thread {
+    public ScheduledFuture<?> future;
 
-    public static void addTask(final Game task, final int initDelay, final int repeatDelay) {
+    public static void addTask(final SnowWar task, final int initDelay, final int repeatDelay) {
         SnowWarWorker.addTask(task, initDelay, repeatDelay, SnowWarWorker.SnowWarTasks);
     }
 
@@ -79,8 +80,4 @@ public class SnowWar extends Game {
             System.out.println("SnowEngine " + ex);
         }
     }
-}
-
-abstract class Game extends Thread {
-    ScheduledFuture<?> future;
 }

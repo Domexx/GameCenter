@@ -26,7 +26,7 @@ public class SnowWarWorker {
         LOGGER.info("[GameCenter] SnowWar Tasks started");
     }
 
-    public static void addTask(final Game task, final int initDelay, final int repeatRate, final ScheduledThreadPoolExecutor worker) {
+    public static void addTask(final SnowWar task, final int initDelay, final int repeatRate, final ScheduledThreadPoolExecutor worker) {
         if (repeatRate > 0) {
             task.future = worker.scheduleAtFixedRate(task, initDelay, repeatRate, TimeUnit.MILLISECONDS);
         } else {
