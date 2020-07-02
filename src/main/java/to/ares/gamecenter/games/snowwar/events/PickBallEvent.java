@@ -3,11 +3,11 @@ package to.ares.gamecenter.games.snowwar.events;
 import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
 import to.ares.gamecenter.games.snowwar.objects.PickBallsGameItemObject;
 
-public class PickBallFromGameItem extends Event {
+public class PickBallEvent extends Event {
 	public HumanGameObject player;
 	public PickBallsGameItemObject gameItem;
 
-	public PickBallFromGameItem(final HumanGameObject player, final PickBallsGameItemObject gameItem) {
+	public PickBallEvent(final HumanGameObject player, final PickBallsGameItemObject gameItem) {
 		eventType = PICKBALLFROMGAMEITEM;
 		this.player = player;
 		this.gameItem = gameItem;

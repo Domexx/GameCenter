@@ -1,11 +1,11 @@
-package to.ares.gamecenter.games.snowwar.unkown;
+package to.ares.gamecenter.games.snowwar.data;
 
 import com.eu.habbo.messages.ServerMessage;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class MapStuffData extends ExtraDataBase {
+public class MapData extends BaseData {
     public static final int TYPE_ID = 1;
 
     @Override
@@ -18,14 +18,14 @@ public class MapStuffData extends ExtraDataBase {
     private static final String STATE = "state";
     public static final String RARITY = "rarity";
 
-    public MapStuffData(String data) {
+    public MapData(String data) {
         extraData = new ConcurrentHashMap<>();
         setExtraData(data);
     }
 
     @Override
     public byte[] data() {
-        final StuffDataWriter data = new StuffDataWriter(TYPE_ID);
+        final DataWriter data = new DataWriter(TYPE_ID);
         data.writeInt8(extraData.size());
         for (final String key : extraData.keySet()) {
             data.writeString(key);

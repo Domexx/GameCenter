@@ -2,9 +2,9 @@ package to.ares.gamecenter.games.snowwar.arenas;
 
 import com.eu.habbo.Emulator;
 import to.ares.gamecenter.games.snowwar.arenas.items.*;
-import to.ares.gamecenter.games.snowwar.unkown.GameFuseObject;
+import to.ares.gamecenter.games.snowwar.data.GameFuseObject;
 import to.ares.gamecenter.games.snowwar.SnowWarRoom;
-import to.ares.gamecenter.games.snowwar.unkown.MapStuffData;
+import to.ares.gamecenter.games.snowwar.data.MapData;
 import to.ares.gamecenter.games.snowwar.objects.GameItemObject;
 import to.ares.gamecenter.games.snowwar.objects.PileGameObject;
 import to.ares.gamecenter.games.snowwar.objects.TreeGameObject;
@@ -12,8 +12,8 @@ import to.ares.gamecenter.games.snowwar.pathfinding.SpawnPoint;
 
 import java.util.Map;
 
-public class FightNight extends Arena {
-	public FightNight() {
+public class FightNightArena extends Arena {
+	public FightNightArena() {
 		GameFuseObject item;
 
 		arenaType = 11;
@@ -627,13 +627,13 @@ public class FightNight extends Arena {
 		item.baseItem = new AdsBackgroundItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
-		item.baseItem.itemExtraType = MapStuffData.TYPE_ID;
+		item.baseItem.itemExtraType = MapData.TYPE_ID;
 		item.itemId = 46;
 		item.X = 0;
 		item.Y = 22;
 		item.Rot = 1;
 		item.Z = 0;
-		item.extraData = new MapStuffData("state=0\toffsetX=-1119\toffsetZ=9950\toffsetY=390\timageUrl=" + Emulator.getConfig().getValue("gamecenter.snowwar.fightnight.bg"));
+		item.extraData = new MapData("state=0\toffsetX=-1119\toffsetZ=9950\toffsetY=390\timageUrl=" + Emulator.getConfig().getValue("gamecenter.snowwar.fightnight.bg"));
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1

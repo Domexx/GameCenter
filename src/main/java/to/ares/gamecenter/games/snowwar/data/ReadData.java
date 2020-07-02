@@ -1,13 +1,12 @@
-package to.ares.gamecenter.games.snowwar.unkown;
+package to.ares.gamecenter.games.snowwar.data;
 
-public class StuffDataReader {
+public class ReadData {
     public int type;
     private byte[] bytes;
     private int reader;
 
-    public StuffDataReader(byte[] arr) {
+    public ReadData(byte[] arr) {
         if (arr == null) {
-            /* Empty StringStuffData */
             bytes = new byte[2];
             return;
         }

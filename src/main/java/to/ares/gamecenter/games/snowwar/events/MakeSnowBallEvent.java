@@ -2,10 +2,10 @@ package to.ares.gamecenter.games.snowwar.events;
 
 import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
 
-public class MakeSnowBall extends Event {
+public class MakeSnowBallEvent extends Event {
 	public HumanGameObject player;
 
-	public MakeSnowBall(final HumanGameObject player) {
+	public MakeSnowBallEvent(final HumanGameObject player) {
 		eventType = MAKESNOWBALL;
 		this.player = player;
 	}

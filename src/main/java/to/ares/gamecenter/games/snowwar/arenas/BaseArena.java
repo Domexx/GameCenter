@@ -1,6 +1,6 @@
 package to.ares.gamecenter.games.snowwar.arenas;
 
-import to.ares.gamecenter.games.snowwar.unkown.GameFuseObject;
+import to.ares.gamecenter.games.snowwar.data.GameFuseObject;
 import to.ares.gamecenter.games.snowwar.SnowWarRoom;
 import to.ares.gamecenter.games.snowwar.objects.GameItemObject;
 import to.ares.gamecenter.games.snowwar.pathfinding.SpawnPoint;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public abstract class Arena {
+public abstract class BaseArena {
 	public int arenaHeight;
 	public int arenaType;
 	public int arenaWidth;

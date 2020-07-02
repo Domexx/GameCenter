@@ -1,20 +1,20 @@
-package to.ares.gamecenter.games.snowwar.unkown;
+package to.ares.gamecenter.games.snowwar.data;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class StuffDataWriter {
+public class WriteData {
     private List<Integer> savedPositions = new ArrayList<Integer>();
 
     private byte[] bytes;
     private int writer;
 
-    private StuffDataWriter(final int type, final int Size) {
+    private WriteData(final int type, final int Size) {
         bytes = new byte[Size];
         writeInt8(type);
     }
 
-    public StuffDataWriter(final int type) {
+    public WriteData(final int type) {
         this(type, 1000); // default size
     }
 

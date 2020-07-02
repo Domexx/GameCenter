@@ -2,12 +2,12 @@ package to.ares.gamecenter.games.snowwar.events;
 
 import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
 
-public class UserMove extends Event {
+public class UserMoveEvent extends Event {
 	public HumanGameObject player;
 	public int x;
 	public int y;
 
-	public UserMove(final HumanGameObject player, final int x, final int y) {
+	public UserMoveEvent(final HumanGameObject player, final int x, final int y) {
 		eventType = MOVE;
 		this.player = player;
 		this.x = x;

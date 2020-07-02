@@ -1,12 +1,12 @@
-package to.ares.gamecenter.games.snowwar.unkown;
+package to.ares.gamecenter.games.snowwar.data;
 
 import com.eu.habbo.messages.ServerMessage;
 
-public class StringStuffData extends ExtraDataBase {
+public class StringData extends BaseData {
     public static final int TYPE_ID = 0;
     public String extraData;
 
-    public StringStuffData(StuffDataReader data) {
+    public StringData(DataReader data) {
         if (data == null) {
             extraData = "";
         } else {
@@ -21,7 +21,7 @@ public class StringStuffData extends ExtraDataBase {
             return null;
         }
 
-        final StuffDataWriter data = new StuffDataWriter(TYPE_ID);
+        final DataWriter data = new DataWriter(TYPE_ID);
         data.writeString(extraData);
         return data.getData();
     }

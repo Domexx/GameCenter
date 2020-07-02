@@ -4,18 +4,17 @@ import com.eu.habbo.Emulator;
 import to.ares.gamecenter.games.snowwar.arenas.items.AdsBackgroundItem;
 import to.ares.gamecenter.games.snowwar.arenas.items.SnowBallPileItem;
 import to.ares.gamecenter.games.snowwar.arenas.items.SnowIceBlockItem;
-import to.ares.gamecenter.games.snowwar.unkown.GameFuseObject;
+import to.ares.gamecenter.games.snowwar.data.GameFuseObject;
 import to.ares.gamecenter.games.snowwar.SnowWarRoom;
-import to.ares.gamecenter.games.snowwar.arenas.items.BaseItem;
-import to.ares.gamecenter.games.snowwar.unkown.MapStuffData;
+import to.ares.gamecenter.games.snowwar.data.MapData;
 import to.ares.gamecenter.games.snowwar.objects.GameItemObject;
 import to.ares.gamecenter.games.snowwar.objects.PileGameObject;
 import to.ares.gamecenter.games.snowwar.pathfinding.SpawnPoint;
 
 import java.util.Map;
 
-public class DragonCave extends Arena {
-	public DragonCave() {
+public class DragonCaveArena extends Arena {
+	public DragonCaveArena() {
 		GameFuseObject item;
 
 		arenaType = 9;
@@ -509,13 +508,13 @@ public class DragonCave extends Arena {
 		item.baseItem = new AdsBackgroundItem();
 		item.baseItem.allowWalk= true;
 		item.baseItem.height = 0.0f;
-		item.baseItem.itemExtraType = MapStuffData.TYPE_ID;
+		item.baseItem.itemExtraType = MapData.TYPE_ID;
 		item.itemId = 36;
 		item.X = 0;
 		item.Y = 22;
 		item.Rot = 1;
 		item.Z = 0;
-		item.extraData = new MapStuffData("state=0\toffsetX=-1070\toffsetZ=9920\toffsetY=1520\timageUrl=" + Emulator.getConfig().getValue("gamecenter.snowwar.dragoncave.bg"));
+		item.extraData = new MapData("state=0\toffsetX=-1070\toffsetZ=9920\toffsetY=1520\timageUrl=" + Emulator.getConfig().getValue("gamecenter.snowwar.dragoncave.bg"));
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1

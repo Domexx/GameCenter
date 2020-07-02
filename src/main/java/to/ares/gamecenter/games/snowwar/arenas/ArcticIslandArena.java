@@ -2,9 +2,9 @@ package to.ares.gamecenter.games.snowwar.arenas;
 
 import com.eu.habbo.Emulator;
 import to.ares.gamecenter.games.snowwar.arenas.items.*;
-import to.ares.gamecenter.games.snowwar.unkown.GameFuseObject;
+import to.ares.gamecenter.games.snowwar.data.GameFuseObject;
 import to.ares.gamecenter.games.snowwar.SnowWarRoom;
-import to.ares.gamecenter.games.snowwar.unkown.MapStuffData;
+import to.ares.gamecenter.games.snowwar.data.MapData;
 import to.ares.gamecenter.games.snowwar.objects.GameItemObject;
 import to.ares.gamecenter.games.snowwar.objects.MachineGameObject;
 import to.ares.gamecenter.games.snowwar.objects.TreeGameObject;
@@ -12,8 +12,8 @@ import to.ares.gamecenter.games.snowwar.pathfinding.SpawnPoint;
 
 import java.util.Map;
 
-public class ArcticIsland extends Arena {
-	public ArcticIsland() {
+public class ArcticIslandArena extends Arena {
+	public ArcticIslandArena() {
 		GameFuseObject item;
 
 		arenaType = 8;
@@ -1023,13 +1023,13 @@ public class ArcticIsland extends Arena {
 		item.baseItem = new AdsBackgroundItem();
 		item.baseItem.allowWalk = true;
 		item.baseItem.height = 0.0f;
-		item.baseItem.itemExtraType = MapStuffData.TYPE_ID;
+		item.baseItem.itemExtraType = MapData.TYPE_ID;
 		item.itemId = 79;
 		item.X = 0;
 		item.Y = 19;
 		item.Rot = 1;
 		item.Z = 0;
-		item.extraData = new MapStuffData("state=0\toffsetX=-1166\toffsetZ=10000\toffsetY=1542\timageUrl=" + Emulator.getConfig().getValue("gamecenter.snowwar.artic.bg"));
+		item.extraData = new MapData("state=0\toffsetX=-1166\toffsetZ=10000\toffsetY=1542\timageUrl=" + Emulator.getConfig().getValue("gamecenter.snowwar.artic.bg"));
 		fuseObjects.add(item);
 
 		item = new GameFuseObject();// 1

@@ -2,6 +2,8 @@ package to.ares.gamecenter.games.snowwar.objects;
 
 import to.ares.gamecenter.games.snowwar.SnowWarGameStage;
 import to.ares.gamecenter.games.snowwar.SnowWarRoom;
+import to.ares.gamecenter.games.snowwar.objects.GameItemObject;
+import to.ares.gamecenter.games.snowwar.objects.SnowBallGameObject;
 import to.ares.gamecenter.games.snowwar.pathfinding.Direction360;
 import to.ares.gamecenter.games.snowwar.pathfinding.Direction8;
 import to.ares.gamecenter.games.snowwar.pathfinding.PlayerTile;

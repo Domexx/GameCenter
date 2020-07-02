@@ -1,9 +1,9 @@
-package to.ares.gamecenter.games.snowwar.unkown;
+package to.ares.gamecenter.games.snowwar.data;
 
 import com.eu.habbo.messages.ServerMessage;
 
 
-public abstract class ExtraDataBase {
+public abstract class BaseData {
 
     public void setExtraData(Object extraData) { }
 

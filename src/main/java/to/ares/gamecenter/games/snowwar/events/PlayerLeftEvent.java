@@ -2,10 +2,10 @@ package to.ares.gamecenter.games.snowwar.events;
 
 import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
 
-public class PlayerLeft extends Event {
+public class PlayerLeftEvent extends Event {
 	public HumanGameObject player;
 
-	public PlayerLeft(final HumanGameObject player) {
+	public PlayerLeftEvent(final HumanGameObject player) {
 		eventType = PLAYERLEFT;
 		this.player = player;
 	}

@@ -1,4 +1,4 @@
-package to.ares.gamecenter.games.snowwar.unkown;
+package to.ares.gamecenter.games.snowwar.data;
 
 import to.ares.gamecenter.games.snowwar.arenas.items.Item;
 
@@ -9,6 +9,6 @@ public class GameFuseObject extends Item {
 	public int Z;
 
 	public GameFuseObject() {
-		extraData = new StringStuffData(null);
+		extraData = new StringData(null);
 	}
 }
