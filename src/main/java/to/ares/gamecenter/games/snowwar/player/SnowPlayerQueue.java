@@ -90,11 +90,12 @@ public class SnowPlayerQueue {
             queue.players.remove(playerObject.userId);
         }
 
-        if (playerObject.snowWarPlayer.getPlayer() != null) {
-            playerObject.snowWarPlayer.getPlayer().getRoomUnit().setRoom(
-                    Emulator.getGameEnvironment().getRoomManager().getRoom(1)
-            );
+        if (playerObject.snowWarPlayer.getPlayer() != null &&
+                Emulator.getConfig().getInt("gamecenter.snowwar.room.id") != 0&&
+                Emulator.getGameEnvironment().getRoomManager().getRoom(Emulator.getConfig().getInt("gamecenter.snowwar.room.id")) != null) {
+            playerObject.snowWarPlayer.getPlayer().goToRoom(Emulator.getConfig().getInt("gamecenter.snowwar.room.id"));
         }
+
         playerObject.cleanData();
     }
 
