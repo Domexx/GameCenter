@@ -74,8 +74,9 @@ public class SnowPlayerQueue {
             if (playerObject == null) {
                 return;
             }
+
             room.players.remove(playerObject.userId);
-            room.TeamPlayers.get(playerObject.team).remove(playerObject.userId);
+            room.teamPlayers.get(playerObject.team).remove(playerObject.userId);
 
             if (room.status == to.ares.gamecenter.games.snowwar.SnowWar.ARENA) {
                 synchronized (room.gameEvents) {
@@ -86,6 +87,7 @@ public class SnowPlayerQueue {
             }
 
             room.broadcast(new UserLeftGameComposer(playerObject.userId));
+
             if (Emulator.getConfig().getInt("gamecenter.snowwar.room.id") != 0 && Emulator.getGameEnvironment().getRoomManager().getRoom(Emulator.getConfig().getInt("gamecenter.snowwar.room.id")) != null) {
                 playerObject.snowWarPlayer.getPlayer().goToRoom(Emulator.getConfig().getInt("gamecenter.snowwar.room.id"));
             }
@@ -110,7 +112,7 @@ public class SnowPlayerQueue {
             room.players.put(cn.getHabbo().getHabboInfo().getId(), to.ares.gamecenter.games.snowwar.SnowWar.PLAYERS.get(cn.getHabbo().getHabboInfo().getId()).getHumanObject());
             int team = 1 + (++pickTeam % to.ares.gamecenter.games.snowwar.SnowWar.TEAMS.length);
             to.ares.gamecenter.games.snowwar.SnowWar.PLAYERS.get(cn.getHabbo().getHabboInfo().getId()).getHumanObject().team = team;
-            room.TeamPlayers.get(team).put(cn.getHabbo().getHabboInfo().getId(), to.ares.gamecenter.games.snowwar.SnowWar.PLAYERS.get(cn.getHabbo().getHabboInfo().getId()).getHumanObject());
+            room.teamPlayers.get(team).put(cn.getHabbo().getHabboInfo().getId(), to.ares.gamecenter.games.snowwar.SnowWar.PLAYERS.get(cn.getHabbo().getHabboInfo().getId()).getHumanObject());
         }
 
         queue.broadcast(new GameStartedComposer(queue));

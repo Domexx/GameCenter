@@ -81,7 +81,7 @@ public class Plugin extends HabboPlugin implements EventListener {
 
         Emulator.getConfig().register("gamecenter.snowwar.game.start.time", "15");
         Emulator.getConfig().register("gamecenter.snowwar.players.min", "4");
-        Emulator.getConfig().register("gamecenter.snowwar.room.id", "");
+        Emulator.getConfig().register("gamecenter.snowwar.room.id", "0");
 
         Emulator.getConfig().register("gamecenter.snowwar.assets", "https://ares.to/c_images/gamecenter_snowwar/");
         Emulator.getConfig().register("gamecenter.snowwar.artic.bg", "https://ares.to/c_images/gamecenter_snowwar/snst_bg_1_a_big.png");
