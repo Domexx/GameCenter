@@ -7,17 +7,17 @@ import to.ares.gamecenter.games.snowwar.tasks.*;
 
 import java.util.concurrent.ScheduledFuture;
 
-public class SnowWar extends Thread {
+public class SnowWarThread extends Thread {
     public ScheduledFuture<?> future;
 
-    public static void addTask(final SnowWar task, final int initDelay, final int repeatDelay) {
-        SnowWarWorker.addTask(task, initDelay, repeatDelay, SnowWarWorker.SnowWarTasks);
+    public static void addTask(final SnowWarThread task, final int initDelay, final int repeatDelay) {
+        SnowWarWorkerThread.addTask(task, initDelay, repeatDelay, SnowWarWorkerThread.SnowWarTasks);
     }
 
     public SnowWarRoom room;
     private RoomQueue pickRoom;
 
-    public SnowWar(final SnowWarRoom snowRoom, final RoomQueue queue) {
+    public SnowWarThread(final SnowWarRoom snowRoom, final RoomQueue queue) {
         room = snowRoom;
         pickRoom = queue;
     }
@@ -45,7 +45,7 @@ public class SnowWar extends Thread {
             if (room.status == to.ares.gamecenter.games.snowwar.SnowWar.STAGE_STARTING) {
                 SnowStageStartingTask.exec(room);
                 room.status = to.ares.gamecenter.games.snowwar.SnowWar.STAGE_RUNNING;
-                SnowWar.addTask(this, 6000, to.ares.gamecenter.games.snowwar.SnowWar.GAMETURNMILLIS);
+                SnowWarThread.addTask(this, 6000, to.ares.gamecenter.games.snowwar.SnowWar.GAMETURNMILLIS);
                 return;
             }
 
@@ -54,7 +54,7 @@ public class SnowWar extends Thread {
 
                 if (room.status == to.ares.gamecenter.games.snowwar.SnowWar.STAGE_STARTING) {
                     future.cancel(false);
-                    SnowWar.addTask(this, 6000, 0);
+                    SnowWarThread.addTask(this, 6000, 0);
                 }
                 return;
             }
@@ -71,7 +71,7 @@ public class SnowWar extends Thread {
                     
                     SnowPlayerQueue.roomLoaded(room);
                     room.status = to.ares.gamecenter.games.snowwar.SnowWar.STAGE_LOADING;
-                    SnowWar.addTask(this, 100, 200);
+                    SnowWarThread.addTask(this, 100, 200);
                 }
             }
         } catch(final Exception ex) {

@@ -1,6 +1,6 @@
 package to.ares.gamecenter.games.snowwar.room.arenas;
 
-import to.ares.gamecenter.games.snowwar.room.items.AdsBackgroundObjectItem;
+import to.ares.gamecenter.games.snowwar.room.items.GameItem;
 import to.ares.gamecenter.games.snowwar.room.SnowWarRoom;
 import to.ares.gamecenter.games.snowwar.objects.BaseObject;
 import to.ares.gamecenter.games.snowwar.room.pathfinding.SpawnPoint;
@@ -16,7 +16,7 @@ public abstract class BaseArena {
 
 	public String heightMap;
 
-	public List<AdsBackgroundObjectItem> fuseObjects = new ArrayList<AdsBackgroundObjectItem>(200);
+	public List<GameItem> fuseObjects = new ArrayList<GameItem>(200);
 
 	public List<SpawnPoint> spawnsBlue = new ArrayList<SpawnPoint>(5);
 	public List<SpawnPoint> spawnsRed = new ArrayList<SpawnPoint>(5);

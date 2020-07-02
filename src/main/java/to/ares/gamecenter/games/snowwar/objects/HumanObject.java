@@ -2,7 +2,7 @@ package to.ares.gamecenter.games.snowwar.objects;
 
 import to.ares.gamecenter.games.snowwar.*;
 import to.ares.gamecenter.games.snowwar.room.SnowWarRoom;
-import to.ares.gamecenter.games.snowwar.room.items.AdsBackgroundObjectItem;
+import to.ares.gamecenter.games.snowwar.room.items.GameItem;
 import to.ares.gamecenter.games.snowwar.events.PickBallEvent;
 import com.eu.habbo.habbohotel.gameclients.GameClient;
 import to.ares.gamecenter.games.snowwar.player.SnowWarPlayer;
@@ -406,9 +406,9 @@ public class HumanObject extends BaseObject {
             return;
         }
 
-        final List<AdsBackgroundObjectItem> items = tile.fuseObjects();
+        final List<GameItem> items = tile.fuseObjects();
         if (items.size() == 1) {
-            final AdsBackgroundObjectItem item = items.get(0);
+            final GameItem item = items.get(0);
             final Direction8 dir = Direction8.getDirection(item.Rot);
             if (dir == humanDir && item.baseItem.name.equals("ads_igorraygun")) {
                 snowWarPlayer.throwSnowballFlood(item.X + (dir.getDiffX() * pow), item.Y + (dir.getDiffY() * pow));

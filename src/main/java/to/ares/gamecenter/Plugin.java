@@ -23,7 +23,7 @@ import to.ares.gamecenter.messages.incoming.snowwar.*;
 import to.ares.gamecenter.messages.outgoing.gamecenter.GameCenterGameListComposer;
 import to.ares.gamecenter.games.snowwar.SnowWar;
 import to.ares.gamecenter.games.snowwar.player.SnowWarPlayer;
-import to.ares.gamecenter.games.snowwar.thread.SnowWarWorker;
+import to.ares.gamecenter.games.snowwar.thread.SnowWarWorkerThread;
 import gnu.trove.map.hash.THashMap;
 
 import java.lang.reflect.Field;
@@ -39,7 +39,7 @@ public class Plugin extends HabboPlugin implements EventListener {
 
         // @TODO: maybe we could do that better here....
         SnowWar.PLAYERS = new HashMap<>();
-        SnowWarWorker.initWorkers();
+        SnowWarWorkerThread.initWorkers();
 
         if(Emulator.isReady && !Emulator.isShuttingDown) {
             this.onEmulatorLoadedEvent(null);
@@ -47,8 +47,8 @@ public class Plugin extends HabboPlugin implements EventListener {
     }
 
     public void onDisable() throws Exception {
-        if (!SnowWarWorker.SnowWarTasks.isShutdown()) {
-            SnowWarWorker.SnowWarTasks.shutdown();
+        if (!SnowWarWorkerThread.SnowWarTasks.isShutdown()) {
+            SnowWarWorkerThread.SnowWarTasks.shutdown();
             LOGGER.info("[GameCenter] Stopped SnowWar Tasks");
         }
 
