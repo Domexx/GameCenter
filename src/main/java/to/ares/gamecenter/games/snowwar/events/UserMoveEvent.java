@@ -2,7 +2,7 @@ package to.ares.gamecenter.games.snowwar.events;
 
 import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
 
-public class UserMoveEvent extends Event {
+public class UserMoveEvent extends BaseEvent {
 	public HumanGameObject player;
 	public int x;
 	public int y;

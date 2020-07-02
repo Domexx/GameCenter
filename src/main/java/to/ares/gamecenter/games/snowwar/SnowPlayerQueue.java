@@ -1,7 +1,7 @@
 package to.ares.gamecenter.games.snowwar;
 
 import com.eu.habbo.Emulator;
-import to.ares.gamecenter.games.snowwar.events.PlayerLeft;
+import to.ares.gamecenter.games.snowwar.events.PlayerLeftEvent;
 import to.ares.gamecenter.messages.outgoing.snowwar.*;
 import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
 import to.ares.gamecenter.games.snowwar.thread.SnowWarTask;
@@ -76,7 +76,7 @@ public class SnowPlayerQueue {
 
             if (room.status == SnowWar.ARENA) {
                 synchronized (room.gameEvents) {
-                    room.gameEvents.add(new PlayerLeft(playerObject));
+                    room.gameEvents.add(new PlayerLeftEvent(playerObject));
                 }
 
                 return;

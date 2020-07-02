@@ -1,7 +1,7 @@
 package to.ares.gamecenter.messages.outgoing.snowwar.parse;
 
 
-import to.ares.gamecenter.games.snowwar.unkown.GameFuseObject;
+import to.ares.gamecenter.games.snowwar.data.GameFuseObject;
 import to.ares.gamecenter.games.snowwar.SnowWarRoom;
 import com.eu.habbo.messages.ServerMessage;
 

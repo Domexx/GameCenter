@@ -35,13 +35,13 @@ public class SnowWarPlayer {
 
     public void makeSnowBall() {
         synchronized (snowRoom.gameEvents) {
-            snowRoom.gameEvents.add(new MakeSnowBall(humanObject));
+            snowRoom.gameEvents.add(new MakeSnowBallEvent(humanObject));
         }
     }
 
     public void playerMove(int x, int y) {
         synchronized (snowRoom.gameEvents) {
-            snowRoom.gameEvents.add(new UserMove(humanObject, x, y));
+            snowRoom.gameEvents.add(new UserMoveEvent(humanObject, x, y));
         }
     }
 
@@ -69,14 +69,14 @@ public class SnowWarPlayer {
         ball6.objectId = snowRoom.objectIdCounter++;
 
         synchronized (snowRoom.gameEvents) {
-            snowRoom.gameEvents.add(new BallThrowToPosition(humanObject, destX * Tile.TILE_SIZE, destY * Tile.TILE_SIZE, 3));
-            snowRoom.gameEvents.add(new CreateSnowBall(ball, humanObject, destX * Tile.TILE_SIZE, destY * Tile.TILE_SIZE, 3));
-            snowRoom.gameEvents.add(new CreateSnowBall(ball4, humanObject, destX * Tile.TILE_SIZE, (destY + 1) * Tile.TILE_SIZE, 3));
-            snowRoom.gameEvents.add(new CreateSnowBall(ball1, humanObject, (destX + 1) * Tile.TILE_SIZE, destY * Tile.TILE_SIZE, 3));
-            snowRoom.gameEvents.add(new CreateSnowBall(ball6, humanObject, (destX - 1) * Tile.TILE_SIZE, (destY + 1) * Tile.TILE_SIZE, 3));
-            snowRoom.gameEvents.add(new CreateSnowBall(ball2, humanObject, (destX - 1) * Tile.TILE_SIZE, (destY - 1) * Tile.TILE_SIZE, 3));
-            snowRoom.gameEvents.add(new CreateSnowBall(ball3, humanObject, (destX + 1) * Tile.TILE_SIZE, (destY - 1) * Tile.TILE_SIZE, 3));
-            snowRoom.gameEvents.add(new CreateSnowBall(ball5, humanObject, (destX + 1) * Tile.TILE_SIZE, (destY + 1) * Tile.TILE_SIZE, 3));
+            snowRoom.gameEvents.add(new BallThrowToPositionEvent(humanObject, destX * Tile.TILE_SIZE, destY * Tile.TILE_SIZE, 3));
+            snowRoom.gameEvents.add(new CreateSnowBallEvent(ball, humanObject, destX * Tile.TILE_SIZE, destY * Tile.TILE_SIZE, 3));
+            snowRoom.gameEvents.add(new CreateSnowBallEvent(ball4, humanObject, destX * Tile.TILE_SIZE, (destY + 1) * Tile.TILE_SIZE, 3));
+            snowRoom.gameEvents.add(new CreateSnowBallEvent(ball1, humanObject, (destX + 1) * Tile.TILE_SIZE, destY * Tile.TILE_SIZE, 3));
+            snowRoom.gameEvents.add(new CreateSnowBallEvent(ball6, humanObject, (destX - 1) * Tile.TILE_SIZE, (destY + 1) * Tile.TILE_SIZE, 3));
+            snowRoom.gameEvents.add(new CreateSnowBallEvent(ball2, humanObject, (destX - 1) * Tile.TILE_SIZE, (destY - 1) * Tile.TILE_SIZE, 3));
+            snowRoom.gameEvents.add(new CreateSnowBallEvent(ball3, humanObject, (destX + 1) * Tile.TILE_SIZE, (destY - 1) * Tile.TILE_SIZE, 3));
+            snowRoom.gameEvents.add(new CreateSnowBallEvent(ball5, humanObject, (destX + 1) * Tile.TILE_SIZE, (destY + 1) * Tile.TILE_SIZE, 3));
         }
     }
 
@@ -95,8 +95,8 @@ public class SnowWarPlayer {
         ball.objectId = snowRoom.objectIdCounter++;
 
         synchronized (snowRoom.gameEvents) {
-            snowRoom.gameEvents.add(new CreateSnowBall(ball, humanObject, vict.location3D().x(), vict.location3D().y(), type));
-            snowRoom.gameEvents.add(new BallThrowToHuman(humanObject, (HumanGameObject) vict, 0));
+            snowRoom.gameEvents.add(new CreateSnowBallEvent(ball, humanObject, vict.location3D().x(), vict.location3D().y(), type));
+            snowRoom.gameEvents.add(new BallThrowToHumanEvent(humanObject, (HumanGameObject) vict, 0));
         }
     }
 
@@ -109,8 +109,8 @@ public class SnowWarPlayer {
         ball.objectId = snowRoom.objectIdCounter++;
 
         synchronized (snowRoom.gameEvents) {
-            snowRoom.gameEvents.add(new CreateSnowBall(ball, humanObject, destX, destY, type));
-            snowRoom.gameEvents.add(new BallThrowToPosition(humanObject, destX, destY, 0));
+            snowRoom.gameEvents.add(new CreateSnowBallEvent(ball, humanObject, destX, destY, type));
+            snowRoom.gameEvents.add(new BallThrowToPositionEvent(humanObject, destX, destY, 0));
         }
     }
 

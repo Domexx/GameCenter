@@ -4,7 +4,7 @@ package to.ares.gamecenter.games.snowwar.objects;
 import to.ares.gamecenter.games.snowwar.SnowWarGameStage;
 import to.ares.gamecenter.games.snowwar.SnowWarRoom;
 import to.ares.gamecenter.games.snowwar.SynchronizedGameStage;
-import to.ares.gamecenter.games.snowwar.events.AddBallToMachine;
+import to.ares.gamecenter.games.snowwar.events.AddBallEvent;
 import to.ares.gamecenter.games.snowwar.pathfinding.Direction8;
 import to.ares.gamecenter.games.snowwar.pathfinding.Tile;
 
@@ -73,7 +73,7 @@ public class MachineGameObject extends PickBallsGameItemObject {
         } else {
         	snowBallGeneratorTimer = SNOWBALLGENERATOR_TIME;
 			synchronized(currentSnowWar.gameEvents) {
-	        	currentSnowWar.gameEvents.add(new AddBallToMachine(this));
+	        	currentSnowWar.gameEvents.add(new AddBallEvent(this));
 			}
         }
     }

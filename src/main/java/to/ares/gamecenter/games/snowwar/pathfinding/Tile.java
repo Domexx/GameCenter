@@ -1,6 +1,6 @@
 package to.ares.gamecenter.games.snowwar.pathfinding;
 
-import to.ares.gamecenter.games.snowwar.unkown.GameFuseObject;
+import to.ares.gamecenter.games.snowwar.data.GameFuseObject;
 import to.ares.gamecenter.games.snowwar.objects.GameItemObject;
 import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
 import to.ares.gamecenter.games.snowwar.objects.PickBallsGameItemObject;
@@ -80,11 +80,11 @@ public class Tile {
         int local1 = (location.x() - _arg1.x());
         if (local1 < 0){
             local1 = -(local1);
-        };
+        }
         int local2 = (location.y() - _arg1.y());
         if (local2 < 0){
             local2 = -(local2);
-        };
+        }
         return ((((local1 < _37G)) && ((local2 < _37G))));
     }
 

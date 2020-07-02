@@ -15,35 +15,35 @@ public class SerializeGameStatus {
         msg.appendInt(1);
         {
             msg.appendInt(arena.gameEvents.size());
-            for (Event evt : arena.gameEvents) {
+            for (BaseEvent evt : arena.gameEvents) {
                 msg.appendInt(evt.eventType); // Event Type
 
                 Emulator.getLogging().logDebugLine(evt.eventType);
 
                 switch (evt.eventType) {
-                    case Event.PLAYERLEFT:
-                        SerializeGame2EventPlayerLeft.parse(msg, (PlayerLeft) evt);
+                    case BaseEvent.PLAYERLEFT:
+                        SerializeGame2EventPlayerLeft.parse(msg, (PlayerLeftEvent) evt);
                         break;
-                    case Event.MOVE:
-                        SerializeGame2EventMove.parse(msg, (UserMove) evt);
+                    case BaseEvent.MOVE:
+                        SerializeGame2EventMove.parse(msg, (UserMoveEvent) evt);
                         break;
-                    case Event.MAKESNOWBALL:
-                        SerializeGame2EventPickSnowBall.parse(msg, (MakeSnowBall) evt);
+                    case BaseEvent.MAKESNOWBALL:
+                        SerializeGame2EventPickSnowBall.parse(msg, (MakeSnowBallEvent) evt);
                         break;
-                    case Event.CREATESNOWBALL:
-                        SerializeGame2EventCreateSnowBall.parse(msg, (CreateSnowBall) evt);
+                    case BaseEvent.CREATESNOWBALL:
+                        SerializeGame2EventCreateSnowBall.parse(msg, (CreateSnowBallEvent) evt);
                         break;
-                    case Event.BALLTHROWPOSITION:
-                        SerializeGame2EventBallThrowToPosition.parse(msg, (BallThrowToPosition) evt);
+                    case BaseEvent.BALLTHROWPOSITION:
+                        SerializeGame2EventBallThrowToPosition.parse(msg, (BallThrowToPositionEvent) evt);
                         break;
-                    case Event.BALLTHROWHUMAN:
-                        SerializeGame2EventBallThrowToHuman.parse(msg, (BallThrowToHuman) evt);
+                    case BaseEvent.BALLTHROWHUMAN:
+                        SerializeGame2EventBallThrowToHuman.parse(msg, (BallThrowToHumanEvent) evt);
                         break;
-                    case Event.PICKBALLFROMGAMEITEM:
-                        SerializeGame2EventPickBallFromGameItem.parse(msg, (PickBallFromGameItem) evt);
+                    case BaseEvent.PICKBALLFROMGAMEITEM:
+                        SerializeGame2EventPickBallFromGameItem.parse(msg, (PickBallEvent) evt);
                         break;
-                    case Event.ADDBALLTOMACHINE:
-                        SerializeGame2EventAddBallToMachine.parse(msg, (AddBallToMachine) evt);
+                    case BaseEvent.ADDBALLTOMACHINE:
+                        SerializeGame2EventAddBallToMachine.parse(msg, (AddBallEvent) evt);
                         break;
                     default:  throw new UnsupportedOperationException("Not yet implemented");
                 }
@@ -64,33 +64,33 @@ public class SerializeGameStatus {
         Composer.add(1, ClientMessage);
         {
             Composer.add(ClientMessage.setSaved(0), ClientMessage);
-            for(final Event evt : arena.gameEvents) {
+            for(final BaseEvent evt : arena.gameEvents) {
                 Composer.add(evt.eventType, ClientMessage); // Event Type
 
                 switch (evt.eventType) {
-                    case Event.PLAYERLEFT:
-                        SerializeGame2EventPlayerLeft.parse(ClientMessage, (PlayerLeft) evt);
+                    case BaseEvent.PLAYERLEFT:
+                        SerializeGame2EventPlayerLeft.parse(ClientMessage, (PlayerLeftEvent) evt);
                         break;
-                    case Event.MOVE:
-                        SerializeGame2EventMove.parse(ClientMessage, (UserMove) evt);
+                    case BaseEvent.MOVE:
+                        SerializeGame2EventMove.parse(ClientMessage, (UserMoveEvent) evt);
                         break;
-                    case Event.MAKESNOWBALL:
-                        SerializeGame2EventPickSnowBall.parse(ClientMessage, (MakeSnowBall) evt);
+                    case BaseEvent.MAKESNOWBALL:
+                        SerializeGame2EventPickSnowBall.parse(ClientMessage, (MakeSnowBallEvent) evt);
                         break;
-                    case Event.CREATESNOWBALL:
-                        SerializeGame2EventCreateSnowBall.parse(ClientMessage, (CreateSnowBall) evt);
+                    case BaseEvent.CREATESNOWBALL:
+                        SerializeGame2EventCreateSnowBall.parse(ClientMessage, (CreateSnowBallEvent) evt);
                         break;
-                    case Event.BALLTHROWPOSITION:
-                        SerializeGame2EventBallThrowToPosition.parse(ClientMessage, (BallThrowToPosition) evt);
+                    case BaseEvent.BALLTHROWPOSITION:
+                        SerializeGame2EventBallThrowToPosition.parse(ClientMessage, (BallThrowToPositionEvent) evt);
                         break;
-                    case Event.BALLTHROWHUMAN:
-                        SerializeGame2EventBallThrowToHuman.parse(ClientMessage, (BallThrowToHuman) evt);
+                    case BaseEvent.BALLTHROWHUMAN:
+                        SerializeGame2EventBallThrowToHuman.parse(ClientMessage, (BallThrowToHumanEvent) evt);
                         break;
-                    case Event.PICKBALLFROMGAMEITEM:
-                        SerializeGame2EventPickBallFromGameItem.parse(ClientMessage, (PickBallFromGameItem) evt);
+                    case BaseEvent.PICKBALLFROMGAMEITEM:
+                        SerializeGame2EventPickBallFromGameItem.parse(ClientMessage, (PickBallEvent) evt);
                         break;
-                    case Event.ADDBALLTOMACHINE:
-                        SerializeGame2EventAddBallToMachine.parse(ClientMessage, (AddBallToMachine) evt);
+                    case BaseEvent.ADDBALLTOMACHINE:
+                        SerializeGame2EventAddBallToMachine.parse(ClientMessage, (AddBallEvent) evt);
                         break;
                     default:  throw new UnsupportedOperationException("Not yet implemented");
                 }

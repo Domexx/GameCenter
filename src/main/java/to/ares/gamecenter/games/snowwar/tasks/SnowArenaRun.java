@@ -3,7 +3,7 @@ package to.ares.gamecenter.games.snowwar.tasks;
 import to.ares.gamecenter.games.snowwar.MessageWriter;
 import to.ares.gamecenter.games.snowwar.SnowWar;
 import to.ares.gamecenter.games.snowwar.SnowWarRoom;
-import to.ares.gamecenter.games.snowwar.events.Event;
+import to.ares.gamecenter.games.snowwar.events.BaseEvent;
 import to.ares.gamecenter.games.snowwar.objects.GameItemObject;
 import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
 import to.ares.gamecenter.messages.outgoing.snowwar.FullGameStatusComposer;
@@ -22,7 +22,7 @@ public class SnowArenaRun {
         }
 
         List<Channel> filter;
-        List<Event> events;
+        List<BaseEvent> events;
         MessageWriter writer;
 
         synchronized (room.gameEvents) {

@@ -1,6 +1,6 @@
 package to.ares.gamecenter.games.snowwar.arenas.items;
 
-import to.ares.gamecenter.games.snowwar.unkown.StringStuffData;
+import to.ares.gamecenter.games.snowwar.data.StringData;
 
 public class BaseItem {
     public String name;
@@ -13,7 +13,7 @@ public class BaseItem {
     public float height;
     public boolean allowWalk;
 
-    public int itemExtraType = StringStuffData.TYPE_ID;
+    public int itemExtraType = StringData.TYPE_ID;
 
     public BaseItem(final String type, final int id, final String name, final int xdim, final int ydim) {
         this.type = type;

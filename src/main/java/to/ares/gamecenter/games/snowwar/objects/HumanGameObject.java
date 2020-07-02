@@ -1,8 +1,8 @@
 package to.ares.gamecenter.games.snowwar.objects;
 
 import to.ares.gamecenter.games.snowwar.*;
-import to.ares.gamecenter.games.snowwar.unkown.GameFuseObject;
-import to.ares.gamecenter.games.snowwar.events.PickBallFromGameItem;
+import to.ares.gamecenter.games.snowwar.data.GameFuseObject;
+import to.ares.gamecenter.games.snowwar.events.PickBallEvent;
 import com.eu.habbo.habbohotel.gameclients.GameClient;
 import to.ares.gamecenter.util.MathUtil;
 import to.ares.gamecenter.util.RandomInteger;
@@ -27,7 +27,6 @@ public class HumanGameObject extends GameItemObject {
     private static final int SCORE_KILL = 5;
     private static final int SCORE_HIT = 1;
 
-
     public SnowWarRoom currentSnowWar;
     public SnowWarPlayer snowWarPlayer;
     public GameClient cn;
@@ -46,7 +45,6 @@ public class HumanGameObject extends GameItemObject {
 
     public int team;
 
-
     private final PlayerTile currentLocation;
     private final PlayerTile moveTarget;
     public Direction8 humanDir;
@@ -56,13 +54,12 @@ public class HumanGameObject extends GameItemObject {
     private int health = MAX_HEALTH;
     private int snowBalls = MAX_SNOWBALLS;
 
-    protected int unused;
+    private int unused;
     private int taskTime;
     private int currentStatus;
 
     private int fireRateLimiter;
     private int pickUpLimiter;
-
 
     public boolean stageLoaded;
 
@@ -305,7 +302,7 @@ public class HumanGameObject extends GameItemObject {
                         currentTile.pickBallsItem.concurrentUses++;
                         pickUpLimiter = PICKUPBALL_TIME;
                         synchronized (currentSnowWar.gameEvents) {
-                            currentSnowWar.gameEvents.add(new PickBallFromGameItem(this, currentTile.pickBallsItem));
+                            currentSnowWar.gameEvents.add(new PickBallEvent(this, currentTile.pickBallsItem));
                         }
                     }
                 }

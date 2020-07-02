@@ -12,7 +12,7 @@ import to.ares.gamecenter.games.snowwar.pathfinding.SpawnPoint;
 
 import java.util.Map;
 
-public class ArcticIslandArena extends Arena {
+public class ArcticIslandArena extends BaseArena {
 	public ArcticIslandArena() {
 		GameFuseObject item;
 

@@ -6,7 +6,7 @@ public class StringData extends BaseData {
     public static final int TYPE_ID = 0;
     public String extraData;
 
-    public StringData(DataReader data) {
+    public StringData(ReadData data) {
         if (data == null) {
             extraData = "";
         } else {
@@ -21,7 +21,7 @@ public class StringData extends BaseData {
             return null;
         }
 
-        final DataWriter data = new DataWriter(TYPE_ID);
+        final WriteData data = new WriteData(TYPE_ID);
         data.writeString(extraData);
         return data.getData();
     }

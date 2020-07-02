@@ -2,7 +2,7 @@ package to.ares.gamecenter.games.snowwar.events;
 
 import to.ares.gamecenter.games.snowwar.objects.MachineGameObject;
 
-public class AddBallEvent extends Event {
+public class AddBallEvent extends BaseEvent {
 	public MachineGameObject gameItem;
 
 	public AddBallEvent(final MachineGameObject gameItem) {

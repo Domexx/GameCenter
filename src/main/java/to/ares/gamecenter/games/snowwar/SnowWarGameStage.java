@@ -1,7 +1,7 @@
 package to.ares.gamecenter.games.snowwar;
 
-import to.ares.gamecenter.games.snowwar.arenas.Arena;
-import to.ares.gamecenter.games.snowwar.unkown.GameFuseObject;
+import to.ares.gamecenter.games.snowwar.arenas.BaseArena;
+import to.ares.gamecenter.games.snowwar.data.GameFuseObject;
 import to.ares.gamecenter.games.snowwar.objects.GameItemObject;
 import to.ares.gamecenter.games.snowwar.pathfinding.Direction8;
 import to.ares.gamecenter.games.snowwar.pathfinding.PlayerTile;
@@ -13,7 +13,7 @@ public class SnowWarGameStage {
     private static int _0Fs = 100000;
     private Tile[][] tileMap;
 
-    public void initialize(Arena arena) {
+    public void initialize(BaseArena arena) {
         buildMap(arena);
         addObjects(arena.fuseObjects);
     }
@@ -98,7 +98,7 @@ public class SnowWarGameStage {
         }
     }
 
-    private void buildMap(Arena arena) {
+    private void buildMap(BaseArena arena) {
         Tile local4;
         Tile local7;
         Tile local8;

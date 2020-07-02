@@ -13,7 +13,7 @@ import to.ares.gamecenter.games.snowwar.pathfinding.SpawnPoint;
 
 import java.util.Map;
 
-public class DragonCaveArena extends Arena {
+public class DragonCaveArena extends BaseArena {
 	public DragonCaveArena() {
 		GameFuseObject item;
 

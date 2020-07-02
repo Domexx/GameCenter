@@ -1,7 +1,7 @@
 package to.ares.gamecenter.games.snowwar;
 
-import to.ares.gamecenter.games.snowwar.arenas.Arena;
-import to.ares.gamecenter.games.snowwar.events.Event;
+import to.ares.gamecenter.games.snowwar.arenas.BaseArena;
+import to.ares.gamecenter.games.snowwar.events.BaseEvent;
 import to.ares.gamecenter.games.snowwar.objects.HumanGameObject;
 import com.eu.habbo.messages.outgoing.MessageComposer;
 import io.netty.channel.Channel;
@@ -26,7 +26,7 @@ public class SnowWarRoom extends SynchronizedGameStage {
 
 	public boolean lobbyFull;
 
-	public Arena arenaType;
+	public BaseArena arenaType;
 
 	public HumanGameObject mostHits;
 	public HumanGameObject mostKills;
@@ -35,7 +35,7 @@ public class SnowWarRoom extends SynchronizedGameStage {
 	public final Map<Integer, Map<Integer, HumanGameObject>> TeamPlayers = new ConcurrentHashMap<Integer, Map<Integer, HumanGameObject>>(SnowWar.TEAMS.length);
 	public final Map<Integer, HumanGameObject> players = new ConcurrentHashMap<Integer, HumanGameObject>(SnowWar.MAXPLAYERS);
 
-	public final List<Event> gameEvents = Collections.synchronizedList(new ArrayList<Event>());
+	public final List<BaseEvent> gameEvents = Collections.synchronizedList(new ArrayList<BaseEvent>());
 
 	public List<Channel> fullGameStatusQueue;
 

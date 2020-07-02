@@ -1,17 +1,17 @@
 package to.ares.gamecenter.games.snowwar;
 
-import to.ares.gamecenter.games.snowwar.arenas.ArcticIsland;
-import to.ares.gamecenter.games.snowwar.arenas.Arena;
-import to.ares.gamecenter.games.snowwar.arenas.DragonCave;
-import to.ares.gamecenter.games.snowwar.arenas.FightNight;
+import to.ares.gamecenter.games.snowwar.arenas.ArcticIslandArena;
+import to.ares.gamecenter.games.snowwar.arenas.BaseArena;
+import to.ares.gamecenter.games.snowwar.arenas.DragonCaveArena;
+import to.ares.gamecenter.games.snowwar.arenas.FightNightArena;
 
 import java.util.HashMap;
 
 public class SnowWar {
-	public static Arena[] ArenaTypes = {
-		new ArcticIsland(),
-		new DragonCave(),
-		new FightNight()
+	public static BaseArena[] ArenaTypes = {
+		new ArcticIslandArena(),
+		new DragonCaveArena(),
+		new FightNightArena()
 	};
 
 	public static HashMap<Integer, SnowWarPlayer> PLAYERS;

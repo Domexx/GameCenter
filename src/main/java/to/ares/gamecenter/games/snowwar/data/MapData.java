@@ -25,7 +25,7 @@ public class MapData extends BaseData {
 
     @Override
     public byte[] data() {
-        final DataWriter data = new DataWriter(TYPE_ID);
+        final WriteData data = new WriteData(TYPE_ID);
         data.writeInt8(extraData.size());
         for (final String key : extraData.keySet()) {
             data.writeString(key);

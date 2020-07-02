@@ -1,7 +1,7 @@
 package to.ares.gamecenter.messages.outgoing.snowwar.parse;
 
-import to.ares.gamecenter.games.snowwar.unkown.GameFuseObject;
-import to.ares.gamecenter.games.snowwar.unkown.MapStuffData;
+import to.ares.gamecenter.games.snowwar.data.GameFuseObject;
+import to.ares.gamecenter.games.snowwar.data.MapData;
 import to.ares.gamecenter.games.snowwar.pathfinding.Tile;
 import com.eu.habbo.messages.ServerMessage;
 
@@ -20,7 +20,7 @@ public class SerializeFuseObject {
         msg.appendInt(fuseItem.Rot);
         msg.appendInt(fuseItem.Z);
         msg.appendBoolean(fuseItem.baseItem.allowWalk);
-        if (fuseItem.extraData instanceof MapStuffData) {
+        if (fuseItem.extraData instanceof MapData) {
             msg.appendInt(1);
             fuseItem.extraData.serializeComposer(msg);
         } else {

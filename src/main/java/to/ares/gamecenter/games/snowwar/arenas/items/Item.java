@@ -1,12 +1,12 @@
 package to.ares.gamecenter.games.snowwar.arenas.items;
 
-import to.ares.gamecenter.games.snowwar.unkown.ExtraDataBase;
+import to.ares.gamecenter.games.snowwar.data.BaseData;
 
 public abstract class Item {
     public int itemId;
 
     public BaseItem baseItem;
-    public ExtraDataBase extraData;
+    public BaseData extraData;
 
     @Override
     public int hashCode() {
